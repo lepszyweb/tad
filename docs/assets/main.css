@@ -1,5 +1,27 @@
-@font-face{font-family:"Replica-Regular";src:url("../assets/fonts/lineto-replica-regular.eot");src:url("../assets/fonts/lineto-replica-regular.eot?#iefix") format("embedded-opentype"),url("../assets/fonts/lineto-replica-regular.woff") format("woff"),url("../assets/fonts/lineto-replica-regular.ttf") format("truetype"),url("../assets/fonts/lineto-replica-regular.svg#lineto-replica-regular") format("svg");font-weight:normal;font-style:normal}
-@font-face{font-family:"Replica-Bold";src:url("../assets/fonts/lineto-replica-bold.eot");src:url("../assets/fonts/lineto-replica-bold.eot?#iefix") format("embedded-opentype"),url("../assets/fonts/lineto-replica-bold.woff") format("woff"),url("../assets/fonts/lineto-replica-bold.ttf") format("truetype"),url("../assets/fonts/lineto-replica-bold.svg#lineto-replica-bold") format("svg");font-weight:normal;font-style:normal}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../assets/fonty/opensans-regular-webfont.eot');
+    src: url('../assets/fonty/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonty/opensans-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonty/opensans-regular-webfont.woff') format('woff'),
+         url('../assets/fonty/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../assets/fonty/opensans-bold-webfont.eot');
+    src: url('../assets/fonty/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonty/opensans-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonty/opensans-bold-webfont.woff') format('woff'),
+         url('../assets/fonty/opensans-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
@@ -5442,7 +5464,7 @@ fieldset[disabled] .btn-danger.active {
 
 /* Vertical Navigation Styles */
 .resVerticalNavigation {
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
   border-radius: 0;
   box-shadow: none;
 }
@@ -5549,7 +5571,7 @@ fieldset[disabled] .btn-danger.active {
 /* Local Header Styles */
 .res-local-header .site-heading {
   color: #005580;
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
   padding: 65px 0px 65px 0;
   font-size: 2.1em;
 }
@@ -5635,7 +5657,7 @@ fieldset[disabled] .btn-danger.active {
 
 /* Horizontal Navigation Styles */
 .resHorizontalNavigation {
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
   background-color: #fff;
 }
 .resHorizontalNavigation .navbar.res-horizontal-navigation {
@@ -5730,7 +5752,7 @@ fieldset[disabled] .btn-danger.active {
 .resGlobalHeader {
   color: #000;
   background-color: #fff;
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
 }
 .resGlobalHeader #skip-to-main {
   margin-bottom: 10px;
@@ -5746,7 +5768,7 @@ fieldset[disabled] .btn-danger.active {
   box-shadow: none;
 }
 .resGlobalHeader .navbar.navbar-default .form-control {
-  font-family: 'Replica-Regular', Arial, sans-serif;
+  font-family: 'open_sansregular', Arial, sans-serif;
   font-size: 1em;
   color: #000;
   border: 0;
@@ -5937,7 +5959,7 @@ fieldset[disabled] .btn-danger.active {
 }
 .resGlobalFooter > .top-middle-container .footer-top strong {
   font-weight: normal;
-  font-family: "Replica-Bold";
+  font-family: "open_sansbold";
 }
 .resGlobalFooter > .top-middle-container .footer-top > .footer-toggle > .footer-toggle-button {
   font-family: "FontAwesome";
@@ -6021,7 +6043,7 @@ fieldset[disabled] .btn-danger.active {
   top: -70px;
 }
 .nav-tabs {
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
   font-size: 15px;
   border-bottom: 0;
 }
@@ -6278,7 +6300,7 @@ fieldset[disabled] .btn-danger.active {
 }
 .accordion.panel-group > .panel.panel-default > .panel-heading {
   background: #ffffff none;
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
   margin: 10px 0 0 0;
   padding: 10px 18px;
   border-radius: 0;
@@ -6373,15 +6395,15 @@ fieldset[disabled] .btn-danger.active {
   margin-right: auto;
 }
 .resInfographicBold {
-  font-family: Replica-Bold !important;
+  font-family: open_sansbold !important;
   font-size: 1.25em;
 }
 .resInfographicExtraBold {
-  font-family: Replica-Bold !important;
+  font-family: open_sansbold !important;
   font-size: 2em;
 }
 .resInfographicUltraBold {
-  font-family: Replica-Bold !important;
+  font-family: open_sansbold !important;
   font-size: 2.5em;
 }
 
@@ -6458,7 +6480,7 @@ fieldset[disabled] .btn-danger.active {
   max-width: 100%;
 }
 .resImageText .thumbnail .overlayText {
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
   font-size: 1.375em;
   background-color: #004c9b;
   color: #fff;
@@ -6546,7 +6568,7 @@ fieldset[disabled] .btn-danger.active {
   /* Media calls for Buttons component */
 }
 .resButtons .res-buttons a {
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
   white-space: normal;
   background-color: transparent;
   text-decoration: none;
@@ -6788,14 +6810,34 @@ fieldset[disabled] .btn-danger.active {
   }
 }
 
-@font-face{font-family:"Replica-Regular";src:url("../assets/fonts/lineto-replica-regular.eot");src:url("../assets/fonts/lineto-replica-regular.eot?#iefix") format("embedded-opentype"),url("../assets/fonts/lineto-replica-regular.woff") format("woff"),url("../assets/fonts/lineto-replica-regular.ttf") format("truetype"),url("../assets/fonts/lineto-replica-regular.svg#lineto-replica-regular") format("svg");font-weight:normal;font-style:normal}
-@font-face{font-family:"Replica-Bold";src:url("../assets/fonts/lineto-replica-bold.eot");src:url("../assets/fonts/lineto-replica-bold.eot?#iefix") format("embedded-opentype"),url("../assets/fonts/lineto-replica-bold.woff") format("woff"),url("../assets/fonts/lineto-replica-bold.ttf") format("truetype"),url("../assets/fonts/lineto-replica-bold.svg#lineto-replica-bold") format("svg");font-weight:normal;font-style:normal}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../assets/fonty/opensans-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonty/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../assets/fonty/opensans-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonty/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
 
 /* Global */
 body {
   color: #000000;
   background-color: #ebebeb;
-  font-family: 'Replica-Regular', Arial, sans-serif, 'FontAwesome';
+  font-family: 'open_sansregular', Arial, sans-serif, 'FontAwesome';
   /*-webkit-font-smoothing: antialiased;*/
   font-size: 16px;
   min-width: 320px;
@@ -6804,7 +6846,7 @@ body {
 .template-content b,
 .res-local-footer-wrapper strong,
 .res-local-footer-wrapper b {
-  font-family: 'Replica-Bold', Arial, sans-serif, 'FontAwesome';
+  font-family: 'open_sansbold', Arial, sans-serif, 'FontAwesome';
   font-weight: normal;
 }
 .container .row.template-content {
@@ -6822,7 +6864,7 @@ blockquote {
   color: #004C9B;
   background-color: #fff;
   font-size: 1.4em;
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
   border: 0;
   width: 95%;
   margin-left: 8px;
@@ -6836,7 +6878,7 @@ blockquote footer {
 blockquote.style1 {
   color: #004C9B;
   background-color: #fff;
-  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-family: 'open_sansbold', Arial, sans-serif;
   border: 0;
   width: 95%;
   margin-left: 8px;
@@ -6906,7 +6948,7 @@ blockquote.style2 footer {
   z-index: 99999;
 }
 .deviceAlert strong {
-  font-family: 'Replica-Bold', Arial, sans-serif, 'FontAwesome';
+  font-family: 'open_sansbold', Arial, sans-serif, 'FontAwesome';
   font-weight: normal;
 }
 .resAssetStack .thumbnail a > img,
@@ -6977,7 +7019,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Replica-Bold', Arial, sans-serif, 'FontAwesome';
+  font-family: 'open_sansbold', Arial, sans-serif, 'FontAwesome';
 }
 h1 a,
 h2 a,
