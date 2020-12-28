@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Zestaw wszystkich reguł - Demo TAD</title>
-  <link rel="stylesheet" href="main.css"/>
+  <link rel="stylesheet" href="tad-demo.css"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
 </head>
@@ -93,7 +93,7 @@
               <h3>Nagłówki nie mogą pomijać poziomów</h3>
               <p>Nagłówki powinny mieć strukturę, która przekazuje hierarchię. Ten warunek jest oparty na technice WCAG 2.1 <a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html">Technice WCAG 2.1 H42: Używanie h1-h6 do identyfikacji nagłówków..</a></p>
 
-              <div class="ml-5 mt-4 mb-5">
+              <div class="ml-5 mt-4 mb-5"><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR />
                 <h5 style="color:#7e7e7e;">Przykład #1 - Ten nagłówek pomija poziom.</h5>
                 <p>Ten błąd jest również wizualnie odzwierciedlony w funkcji „Pokaż konspekt”.</p>
               </div>
@@ -262,7 +262,7 @@
 
                 <div class="col-md-4 d-flex">
                   <div class="card mb-4 shadow-sm flex-fill text-center">
-                    <a href="#" style="background-color:#e2e2e2"><img src="image-examples/fiat.jpg" alt="Napraw to jeszcze raz Tony!" width="100%" class="w-100"><span class="text-center lead">Dowiedz się więcej o fiacie.</span></a>
+                    <a href="#" style="background-color:#e2e2e2"><img src="image-examples/fiat.jpg" alt="Napraw to jeszcze raz Tomku!" width="100%" class="w-100"><span class="text-center lead">Dowiedz się więcej o fiacie.</span></a>
                     <div class="card-body">
                       <p class="card-text">Warunek 14: Podlinkowany obraz, który ma <strong>i tekst alternatywny, i tekst łącza.</strong></p>
                     </div>
@@ -285,8 +285,7 @@
               <h2 id="list-item-2">Łącza</h2>
 
               <h3>Zbędne słowa</h3>
-              <p>Jeśli hiperłącza zawierają <strong>którekolwiek</strong> z poniższych słów lub znaków w hiperłączu, zostanie to oznaczone jako błąd. Zbędne słowa: <kbd>Kliknij tutaj</kbd> <kbd>&lt;</kbd> <kbd>&gt;</kbd> <kbd>http://</kbd>
-                <kbd>https://</kbd> <kbd>.aspx</kbd> <kbd>.html</kbd> <kbd>.php</kbd></p>
+              <p>Jeśli hiperłącza zawierają <strong>którekolwiek</strong> z poniższych słów lub znaków w hiperłączu, zostanie to oznaczone jako błąd. Zbędne słowa lub znaki: <kbd>kliknij</kbd> <kbd>idź</kbd> <kbd>&lt;</kbd> <kbd>&gt;</kbd> <kbd>http://</kbd> <kbd>https://</kbd> <kbd>.aspx</kbd> <kbd>.html</kbd> <kbd>.php</kbd></p>
 
               <div class="ml-5 pt-4 mb-5">
                 <div class="row pb-2">
@@ -309,12 +308,7 @@
 
 
               <h3>Niejednoznaczne słowa i frazy</h3>
-              <p>Jeśli poniższe słowa lub frazy są użyte jako sam tekst hiperłącza, zostanie to oznaczone jako błąd. W przypadku użycia z innym tekstem nie zostaną oflagowane jako błąd. Niejednoznaczne słowa i frazy: <kbd>dowiedz się więcej</kbd> <kbd>więcej</kbd> <kbd>zarejestruj</kbd> <kbd>zarejestruj teraz</kbd> <kbd>ta strona</kbd> <kbd>wyloguj</kbd> <kbd>czytaj to</kbd> <kbd>zobacz</kbd> <kbd>zobacz naszą</kbd> <kbd>czytaj więcej</kbd> <kbd>strona</kbd> <kbd>.</kbd> <kbd>,</kbd> <kbd>:</kbd> <kbd>tę stronę</kbd> <kbd>pobierz</kbd> <kbd>formularz</kbd> <kbd>link</kbd> <kbd>tutaj</kbd> <kbd>ten</kbd></p>
-
-        
-
-
-
+              <p>Jeśli poniższe słowa lub frazy są użyte jako sam tekst hiperłącza, zostanie to oznaczone jako błąd. W przypadku użycia z innym tekstem nie zostaną oflagowane jako błąd. Niejednoznaczne słowa i frazy: <kbd>dowiedz się więcej</kbd> <kbd>idź do</kbd> <kbd>więcej</kbd> <kbd>zarejestruj</kbd> <kbd>ten link</kbd> <kbd>ta strona</kbd> <kbd>wyloguj</kbd> <kbd>czytaj to</kbd> <kbd>zobacz</kbd> <kbd>zobacz naszą</kbd> <kbd>czytaj więcej</kbd> <kbd>strona</kbd> <kbd>.</kbd> <kbd>,</kbd> <kbd>:</kbd> <kbd>tę stronę</kbd> <kbd>pobierz</kbd> <kbd>formularz</kbd> <kbd>link</kbd> <kbd>tutaj</kbd> <kbd>ten</kbd></p>
               <div class="ml-5 pt-4 mb-5">
                 <div class="row">
                   <div class="col-md-6">
@@ -720,8 +714,8 @@
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
 
-  <!--Sa11y (accessibility checker)-->
-  <script src="./sa11y-with-contrast.js"></script>
+  <!--TAD (accessibility checker)-->
+<script src="https://lepszyweb.github.io/tad/tad-contrast.js"></script>
 
   <script>
     $(document).ready(function() {
