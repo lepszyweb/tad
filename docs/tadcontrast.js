@@ -88,7 +88,7 @@ function Sa11y() {
 
         +
 
-        //Add a link to your own help page or documentation. Dodaj łącze do swojego włąsnego systemu pomocy lub dokumentacji
+        //Add a link to your own help page or documentation. Dodaj łącze do swojego własnego systemu pomocy lub dokumentacji
         "<div id='sa11y-errors-found' role='alert' class='sa11y-panel-header'><div class='sa11y-th-img'>" + PanelErrorIcon + "</div><div class='sa11y-td-msg'>Znaleziono błędy dostępności!<!--<br><a href='https://lepszyweb.pl/' target='_blank'>Potrzebujesz pomocy?</a>--></div></div>"
 
         +
