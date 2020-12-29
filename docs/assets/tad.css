@@ -5151,12 +5151,21 @@ font-size: 2em;
  float:left;
 }
 
-.xxx {
- float:left;	
-	
-}
+
 .bannerek img {width: 300px}
-.res-local-header-wrapper img {max-width: 80rem; margin: 0 auto}
+
+
+@media (min-width: 769px) {
+.res-local-header-wrapper img.logotad {max-width: 500px;}
+
+}	
+
+
+@media (max-width: 768px) {
+img.logotad {
+.res-local-header-wrapper img.logotad {max-width: 250px;}
+}	
+
 /* Local Header Styles */
 .res-local-header .site-heading {
   color: #005580;
@@ -5438,22 +5447,6 @@ font-size: 2em;
   height: auto;
   padding: 0;
 }
-
-
-@media (min-width: 769px) {
-img.logotad {
-
-  width: 500px;
-  height: 250px;
-
-}	
-
-
-@media (max-width: 768px) {
-img.logotad {
-  width: 300px;
-  height: 150px;
-}	
 
 
 
