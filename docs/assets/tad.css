@@ -5141,7 +5141,7 @@ fieldset[disabled] .btn-danger.active {
 
 }	
 @media screen and (max-width: 479px) {
-.res-local-header-wrapper img.logotad {max-width: 200px;}
+.res-local-header-wrapper img.logotad {max-width: 300px;}
 }
 
 	
