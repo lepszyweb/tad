@@ -4,7 +4,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="assets/links.css" type="text/css">
+  <link rel="stylesheet" href="assets/laptop.css" type="text/css">  
   <link rel="stylesheet" href="assets/tad.css" type="text/css">
+  <link rel="stylesheet" href="assets/aria.accordion.css" type="text/css">  
+  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
   <!-- Primary Meta Tags -->
   <title>TAD - Twój Asystent Dostępności</title>
@@ -32,7 +38,7 @@
               <nav aria-label="global" class="navbar navbar-default">
                 <div class="container-fluid">
                   <div class="navbar-header">
-                    <a class="navbar-brand" href="https://lepszyweb.pl/"> <img src="assets/lw.svg" alt="LepszyWeb.pl">
+                    <a class="navbar-brand" href="https://lepszyweb.pl/"> <img src="assets/lw_logo-cz.svg" alt="LepszyWeb.pl">
                     </a>
                   </div>
                 </div>
@@ -51,11 +57,10 @@
             <div class="local-header-section col-xs-12">
               <div class="res-local-header">
                 <div class="row template-local-header">
-                  <div class="local-header-section col-xs-12">
-                    <h1 class="site-heading text-center">
-                      <span style="font-size:4em">TAD</span>
-                      <span class="text-center" style="font-size:1em!important;display:block;">Twój Asystent Dostępności</span>
-                    </h1>
+                  <div class="local-header-section col-xs-12" style="text-align:center">
+<h1><img src="./assets/tad-logo.svg" alt="Twój asystent dostępności"></h1>
+
+</div>
                   </div>
                 </div>
               </div>
@@ -107,7 +112,7 @@
 
         <div class="sa11y-hero">
           <div class="container">
-            <p class="hero-p text-center">TAD to narzędzie dla autrów treści <strong>wspomagające zapewnianie dostępności</strong>, które <strong>wyróżnia wizualnie</strong> typowe problemy i podpowiada, jak je naprawić.</p>
+            <p class="hero-p text-center">TAD to narzędzie dla autrów treści <strong>wspomagające zapewnianie dostępności</strong>.  <strong>Wyróżnia&nbsp;wizualnie</strong>&nbsp;typowe problemy i podpowiada, jak je naprawić.</p>
           </div>
         </div>
 
@@ -173,10 +178,10 @@
 
             <div class="row">
               <div class="col-md-6 text-center">
-                <img class="responsive-img" width="400" src="assets/outline-errors.png" alt="Konspekt strony z błędną hierarchią nagłówków">
+                <img class="responsive-img" width="400" src="assets/konspekt-errors.png" alt="Konspekt strony z błędną hierarchią nagłówków">
               </div>
               <div class="col-md-6 text-center">
-                <img class="responsive-img" width="400" src="assets/outline-no-errors.png" alt="Konspekt strony z poprawną hierarchią nagłówków.">
+                <img class="responsive-img" width="400" src="assets/konspekt-no-errors.png" alt="Konspekt strony z poprawną hierarchią nagłówków.">
               </div>
             </div>
           </div>
@@ -406,17 +411,147 @@ if (checkAnnouncement > 1) {
       </main>
     </div>
   <div class="resGlobalFooter">
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer class="resGlobalFooter">
       <div class="res-local-footer-wrapper">
         <div class="container">
           <div class="resLocalFooter">
             <div class="res-local-footer">
               <div class="row template-local-footer">
-                <div class="col-sm-4 text-center">&nbsp;</div>
-                <div class="col-sm-4 text-center">
-                  <img src="assets/RU-DMP-CCS.svg" alt="Logo for Digital Media Projects, Computing and Communications Services (CCS)." class="pt30 pb30" width="360">
+                <div class="col-sm-3">
+				   <h3 class="foter-module-title">Informacje kontaktowe</h3>
+				        <div class="nav-module">
+				            <ul class="list-unstyled">
+                                            <li class="mb-2"><strong>Pracownia Dostępności Cyfrowej. LepszyWeb.pl<br></strong></li>
+                                            <li class="d-flex flex-row">
+                                                <i class="fa fa-map-marker mr-3" aria-hidden="true"></i>
+                                                <span> 44-335 Jastrzębie Zdrój<br>ul. Opolska 8/7
+                                            </span>
+                                            </li>
+                                            <li><i class="fa fa-phone mr-3" aria-hidden="true"></i><a class="text-white" href="tel:728832814"> tel: 728-832-814</a></li>
+                                            <li><i class="fa fa-phone mr-3" aria-hidden="true"></i><a class="text-white" href="tel:608089112"> tel: 608-089-112</a></li>
+                                            <li><i class="fa fa-envelope mr-3" aria-hidden="true"></i><a href="mailto:kontakt@lepszyweb.pl" class="text-white"> email: kontakt@lepszyweb.pl</a>
+                                            </li>
+                            </ul>
+					    </div>										
+				
+				</div>
+                <div class="col-sm-3">
+				
+				<h3 class="foter-module-title">Usługi</h3>
+				        <div class="nav-module">
+				            <ul class="menu nav flex-column dark">				
+                                        <li class="item-244 nav-item"><a href="https://wcag.lepszyweb.pl/" class="nav-link px-0">Jak spełnić WCAG?</a></li>
+                                        <li class="item-244 nav-item"><a href="https://lepszyweb.pl/walidator" class="nav-link px-0">ALLY - walidator dostępności</a></li>
+                                        <li class="item-244 nav-item"><a href="https://lepszyweb.pl/andi" class="nav-link px-0">ANDI - inspektor dostępności</a></li>
+                                        <li class="item-244 nav-item"><a href="https://raport.lepszyweb.pl/" class="nav-link px-0">Generator raportów z oceny</a></li>
+                                        <li class="item-222 nav-item"><a href="https://deklaracja.lepszyweb.pl" class="nav-link px-0">Generator
+                                            deklaracji dostępności</a></li>
+                                        <li class="item-227 nav-item"><a href="https://kontrast.lepszyweb.pl" class="nav-link px-0">Wyszukiwarka kontrastów</a></li>
+                                        <li class="item-243 nav-item"><a href="https://przedipo.lepszyweb.pl" class="nav-link px-0">Demo Przed i Po</a></li>
+                            </ul>
+					    </div>		
+
+
                 </div>
-                <div class="col-sm-4 text-center">&nbsp;</div>
+                <div class="col-sm-3">
+				<h3 class="foter-module-title">Walidator - informacje</h3>
+				        <div class="nav-module">
+				            <ul class="category-module mod-list nav flex-column dark">					
+
+
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/5-rodzajow-wynikow-testow-dostepnosci">5 rodzajów wyników
+                                            testów dostępności </a>
+
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/audyt-wspomagany">Audyt
+                                            wspomagany</a>
+
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/dlaczego-metoda-rgaa">Dlaczego
+                                            metoda RGAA?</a>
+
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/orientacyjny-miernik-dostepnosci">Orientacyjny miernik
+                                            dostępności </a>
+
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/rgaa-jako-metoda-oceniania-dostepnosci">RGAA jako metoda
+                                            oceniania dostępności</a>
+
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/struktura-wynikow">Struktura
+                                            wyników</a>
+
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/szybki-audyt-stron">Szybki
+                                            audyt stron</a>
+
+
+                                        </li>
+                            </ul>
+					    </div>					
+				
+				</div>
+				
+                <div class="col-sm-3">
+				<h3 class="foter-module-title">Szkolenia</h3>
+						<div class="nav-module">
+				            <ul class="category-module mod-list nav flex-column dark">	
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/audyt-dostepnosci-we-wlasnym-zakresie">Audyt dostępności we
+                                            własnym zakresie</a>
+
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dokumentow-pdf">Tworzenie dokumentów PDF</a>
+
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dostepnych-dokumentow-biurowych">Tworzenie
+                                            dostępnych dokumentów biurowych </a>
+
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/zarzadzanie-dostepnoscia-cyfrowa">Zarządzanie dostępnością
+                                            cyfrową</a>
+                                        </li>
+                            </ul>
+					    </div>					
+				
+				</div>				
+				
+				
+				
+				
               </div>
             </div>
           </div>
@@ -426,12 +561,39 @@ if (checkAnnouncement > 1) {
         <div class="container">
           <div class="row footer-top">
             <div class="col-sm-12 text-center">
-              <strong>Ryerson University</strong>
+						<span class="sp-copyright">
+                        &copy;2020 Pracownia Dostępności Cyfrowej LepszyWeb.pl. Wszystkie prawa zastrzeżone.
+                        Witryna wygenerowana:  29 grudnia  2020 r. </span> 
+						<a class="mod-articles-category-title nav-link px-0" href="deklaracja-dostepnosci">Deklaracja dostępności</a>
+                            </span>
+
             </div>
           </div>
         </div>
       </div>
     </footer>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   </div>
   <script src="assets/script.min.js"></script>
 </body>

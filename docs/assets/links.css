@@ -1,0 +1,429 @@
+/* Links */
+a {
+  color: #7e4794;
+  text-shadow: none;
+  text-decoration: underline;
+}
+
+a {
+  background-color: transparent;
+}
+
+
+a:hover,
+a:focus {
+  color: #440044;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a.btn.btn-default.btn-block.btn-sa11y {font-size:1.2em;}
+a.btn.btn-default.btn-block.btn-sa11y:focus {background:black;border-color: black;}
+
+
+.template-content a {
+  color: #7e4794;
+  text-decoration: underline;
+}
+.template-content a:hover {
+  text-decoration: none;
+}
+.template-content h1 a,
+.template-content h2 a,
+.template-content h3 a,
+.template-content h4 a,
+.template-content h5 a,
+.template-content h6 a {
+  color: #000;
+}
+
+
+* Headers */
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'open_sansbold', Arial, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #000;
+  text-decoration: underline;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  text-decoration: none;
+}
+h1 {font-size: 2.4em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 1.2em;}
+h5 {font-size: 1.1em;}
+h6 {font-size: 1em;}
+
+h1.headingHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+h1.headingHidden-edit {
+  position: relative;
+  color: #cdcdcd;
+}
+
+h1.headingHidden-edit:after {
+  font-family: "FontAwesome";
+  content: "\f070";
+  position: absolute;
+  top: -45px;
+  right: 5px;
+  font-size: .4em;
+  padding: 2px;
+  border-radius: 4px;
+  color: #000;
+  background: #ddd;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#eeeeee, #cccccc);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#eeeeee, #cccccc);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#eeeeee, #cccccc);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#eeeeee, #cccccc);
+  /* Standard syntax */
+  border: 1px solid #bbb;
+}
+#mainContent > .resPageHeading h1:first-child {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.right-sidebar-section > .content > .resText:first-child > .res-text > h1:first-child,
+.left-sidebar-section > .content > .resText:first-child > .res-text > h1:first-child,
+.content-area-section > .content > .resText:first-child > .res-text > h1:first-child,
+.right-sidebar-section > .content > .resTitle:first-child > h1:first-child,
+.left-sidebar-section > .content > .resTitle:first-child > h1:first-child,
+.content-area-section > .content > .resTitle:first-child > h1:first-child,
+.right-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h1:first-child,
+.left-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h1:first-child,
+.content-area-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h1:first-child,
+.right-sidebar-section > .content > .resText:first-child > .res-text > h2:first-child,
+.left-sidebar-section > .content > .resText:first-child > .res-text > h2:first-child,
+.content-area-section > .content > .resText:first-child > .res-text > h2:first-child,
+.right-sidebar-section > .content > .resTitle:first-child > h2:first-child,
+.left-sidebar-section > .content > .resTitle:first-child > h2:first-child,
+.content-area-section > .content > .resTitle:first-child > h2:first-child,
+.right-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h2:first-child,
+.left-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h2:first-child,
+.content-area-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h2:first-child,
+.right-sidebar-section > .content > .resText:first-child > .res-text > h3:first-child,
+.left-sidebar-section > .content > .resText:first-child > .res-text > h3:first-child,
+.content-area-section > .content > .resText:first-child > .res-text > h3:first-child,
+.right-sidebar-section > .content > .resTitle:first-child > h3:first-child,
+.left-sidebar-section > .content > .resTitle:first-child > h3:first-child,
+.content-area-section > .content > .resTitle:first-child > h3:first-child,
+.right-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h3:first-child,
+.left-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h3:first-child,
+.content-area-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h3:first-child,
+.right-sidebar-section > .content > .resText:first-child > .res-text > h4:first-child,
+.left-sidebar-section > .content > .resText:first-child > .res-text > h4:first-child,
+.content-area-section > .content > .resText:first-child > .res-text > h4:first-child,
+.right-sidebar-section > .content > .resTitle:first-child > h4:first-child,
+.left-sidebar-section > .content > .resTitle:first-child > h4:first-child,
+.content-area-section > .content > .resTitle:first-child > h4:first-child,
+.right-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h4:first-child,
+.left-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h4:first-child,
+.content-area-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h4:first-child,
+.right-sidebar-section > .content > .resText:first-child > .res-text > h5:first-child,
+.left-sidebar-section > .content > .resText:first-child > .res-text > h5:first-child,
+.content-area-section > .content > .resText:first-child > .res-text > h5:first-child,
+.right-sidebar-section > .content > .resTitle:first-child > h5:first-child,
+.left-sidebar-section > .content > .resTitle:first-child > h5:first-child,
+.content-area-section > .content > .resTitle:first-child > h5:first-child,
+.right-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h5:first-child,
+.left-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h5:first-child,
+.content-area-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h5:first-child,
+.right-sidebar-section > .content > .resText:first-child > .res-text > h6:first-child,
+.left-sidebar-section > .content > .resText:first-child > .res-text > h6:first-child,
+.content-area-section > .content > .resText:first-child > .res-text > h6:first-child,
+.right-sidebar-section > .content > .resTitle:first-child > h6:first-child,
+.left-sidebar-section > .content > .resTitle:first-child > h6:first-child,
+.content-area-section > .content > .resTitle:first-child > h6:first-child,
+.right-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h6:first-child,
+.left-sidebar-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h6:first-child,
+.content-area-section > .content > .resHtmlSnippet:first-child > .res-html-snippet > h6:first-child {
+  margin-top: 0 !important;
+}
+
+@media screen and (max-width: 992px),
+@media screen and (max-width: 768px){
+  h1 {font-size: 2.1em;}
+  h2 {font-size: 1.6em;}
+  h3 {font-size: 1.2em;}
+  h4 {font-size: 1.1em;}
+  h5 {font-size: 1.05em;}
+  h6 {font-size: 1em;}
+}
+
+/* Paragraph */
+body > .container p {
+  margin: 0 0 15px 0;
+}
+/* Captions */
+body > .container caption {
+  color: #666666;
+}
+/* Lists */
+body > .container ul {
+  margin-bottom: 15px;
+}
+body > .container ul:not([class]):not([id]) {
+  padding-left: 30px;
+}
+body > .container li {
+  margin-bottom: 10px;
+}
+body > .container ol {
+  margin-bottom: 15px;
+  list-style-type: decimal;
+}
+body > .container ol:not([class]):not([id]) {
+  padding-left: 30px;
+}
+body > .container ol ol {
+  list-style-type: lower-alpha;
+}
+body > .container ol ol ol {
+  list-style-type: lower-roman;
+}
+body > .container ol ol ol ol {
+  list-style-type: decimal;
+}
+body > .container ol ol ol ol ol {
+  list-style-type: lower-alpha;
+}
+body > .container ol ol ol ol ol ol {
+  list-style-type: lower-roman;
+}
+body > .container .resTabs ul[role*="tablist"] {
+  margin-bottom: 0;
+}
+body > .container .resTabs li[role*="presentation"] {
+  margin-bottom: -1px;
+}
+body > footer.res-local-footer-wrapper ul {
+  margin-bottom: 10px;
+}
+body > footer.res-local-footer-wrapper li {
+  margin-bottom: 5px;
+}
+/* Default Component Spacing */
+body > .container > .row > .left-sidebar-section div[class*="res"]:not([class^="res-"]),
+body > .container > .row > .content-area-section div[class*="res"]:not([class^="res-"]),
+body > .container > .row > .right-sidebar-section div[class*="res"]:not([class^="res-"]),
+body > .container > .row > .left-sidebar-section form,
+body > .container > .row > .content-area-section form,
+body > .container > .row > .right-sidebar-section form {
+  margin-bottom: 30px;
+}
+body > .container > .row > .left-sidebar-section blockquote.style2,
+body > .container > .row > .content-area-section blockquote.style2,
+body > .container > .row > .right-sidebar-section blockquote.style2 {
+  margin-top: 0 !important;
+  margin-bottom: 39px !important;
+}
+body > .container > .row > .left-sidebar-section div.resThreeColEven,
+body > .container > .row > .content-area-section div.resThreeColEven,
+body > .container > .row > .right-sidebar-section div.resThreeColEven,
+body > .container > .row > .left-sidebar-section div.resTwoColEven,
+body > .container > .row > .content-area-section div.resTwoColEven,
+body > .container > .row > .right-sidebar-section div.resTwoColEven,
+body > .container > .row > .left-sidebar-section div.resTwoColOneTwo,
+body > .container > .row > .content-area-section div.resTwoColOneTwo,
+body > .container > .row > .right-sidebar-section div.resTwoColOneTwo,
+body > .container > .row > .left-sidebar-section div.resTwoColTwoOne,
+body > .container > .row > .content-area-section div.resTwoColTwoOne,
+body > .container > .row > .right-sidebar-section div.resTwoColTwoOne,
+body > .container > .row > .left-sidebar-section div.resFlow,
+body > .container > .row > .content-area-section div.resFlow,
+body > .container > .row > .right-sidebar-section div.resFlow,
+body > .container > .row > .left-sidebar-section div.embed-responsive,
+body > .container > .row > .content-area-section div.embed-responsive,
+body > .container > .row > .right-sidebar-section div.embed-responsive,
+body > .container > .row > .left-sidebar-section div.resVerticalNavigation,
+body > .container > .row > .content-area-section div.resVerticalNavigation,
+body > .container > .row > .right-sidebar-section div.resVerticalNavigation,
+body > .container > .row > .left-sidebar-section div.resTabs form,
+body > .container > .row > .content-area-section div.resTabs form,
+body > .container > .row > .right-sidebar-section div.resTabs form,
+body > .container > .row > .left-sidebar-section div.resImageText div.thumbnail,
+body > .container > .row > .content-area-section div.resImageText div.thumbnail,
+body > .container > .row > .right-sidebar-section div.resImageText div.thumbnail,
+body > .container > .row > .left-sidebar-section div.resVideoText div.thumbnail,
+body > .container > .row > .content-area-section div.resVideoText div.thumbnail,
+body > .container > .row > .right-sidebar-section div.resVideoText div.thumbnail,
+body > .container > .row > .left-sidebar-section div.resPageHeading,
+body > .container > .row > .content-area-section div.resPageHeading,
+body > .container > .row > .right-sidebar-section div.resPageHeading,
+body > .container > .row > .left-sidebar-section div.stackContentMain,
+body > .container > .row > .content-area-section div.stackContentMain,
+body > .container > .row > .right-sidebar-section div.stackContentMain,
+body > .container > .row > .left-sidebar-section div.resList,
+body > .container > .row > .content-area-section div.resList,
+body > .container > .row > .right-sidebar-section div.resList {
+  margin: 0 !important;
+}
+body > .container > .row > .left-sidebar-section div.resTabs div[class*="res"]:not([class^="res-"]):nth-last-child(2),
+body > .container > .row > .content-area-section div.resTabs div[class*="res"]:not([class^="res-"]):nth-last-child(2),
+body > .container > .row > .right-sidebar-section div.resTabs div[class*="res"]:not([class^="res-"]):nth-last-child(2) {
+  margin: 0 !important;
+}
+body > .res-local-footer-wrapper div[class*="res"]:not([class^="res-"]),
+body > .res-local-footer-wrapper form {
+  margin-bottom: 30px;
+}
+body > .res-local-footer-wrapper blockquote.style2 {
+  margin-top: 0 !important;
+  margin-bottom: 39px !important;
+}
+body > .res-local-footer-wrapper div.resThreeColEven,
+body > .res-local-footer-wrapper div.resTwoColEven,
+body > .res-local-footer-wrapper div.resTwoColOneTwo,
+body > .res-local-footer-wrapper div.resTwoColTwoOne,
+body > .res-local-footer-wrapper div.resFlow,
+body > .res-local-footer-wrapper div.embed-responsive,
+body > .res-local-footer-wrapper div.resVerticalNavigation,
+body > .res-local-footer-wrapper div.resTabs form,
+body > .res-local-footer-wrapper div.resImageText div.thumbnail,
+body > .res-local-footer-wrapper div.resVideoText div.thumbnail,
+body > .res-local-footer-wrapper div.resPageHeading,
+body > .res-local-footer-wrapper div.stackContentMain,
+body > .res-local-footer-wrapper div.resLocalFooter {
+  margin: 0 !important;
+}
+/* Accessibility */
+div:not(.x-window) a,
+div:not(.x-window) input,
+div:not(.x-window) .btn,
+div:not(.x-window) .navbar-toggle,
+div:not(.x-window) .form-control,
+div:not(.x-window) .dropdown-toggle,
+div:not(.x-window) .btn-default,
+div:not(.x-window) textarea:focus,
+div:not(.x-window) input[type="text"]:focus,
+div:not(.x-window) input[type="password"]:focus,
+div:not(.x-window) input[type="datetime"]:focus,
+div:not(.x-window) input[type="datetime-local"]:focus,
+div:not(.x-window) input[type="date"]:focus,
+div:not(.x-window) input[type="month"]:focus,
+div:not(.x-window) input[type="time"]:focus,
+div:not(.x-window) input[type="week"]:focus,
+div:not(.x-window) input[type="number"]:focus,
+div:not(.x-window) input[type="email"]:focus,
+div:not(.x-window) input[type="url"]:focus,
+div:not(.x-window) input[type="search"]:focus,
+div:not(.x-window) input[type="tel"]:focus,
+div:not(.x-window) input[type="color"]:focus,
+div:not(.x-window) .uneditable-input:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
+}
+div:not(.x-window) a:focus,
+div:not(.x-window) input:focus,
+div:not(.x-window) .btn:focus,
+div:not(.x-window) .navbar-toggle:focus,
+div:not(.x-window) .form-control:focus,
+div:not(.x-window) .dropdown-toggle:focus,
+div:not(.x-window) .btn-default:focus,
+div:not(.x-window) textarea:focus:focus,
+div:not(.x-window) input[type="text"]:focus:focus,
+div:not(.x-window) input[type="password"]:focus:focus,
+div:not(.x-window) input[type="datetime"]:focus:focus,
+div:not(.x-window) input[type="datetime-local"]:focus:focus,
+div:not(.x-window) input[type="date"]:focus:focus,
+div:not(.x-window) input[type="month"]:focus:focus,
+div:not(.x-window) input[type="time"]:focus:focus,
+div:not(.x-window) input[type="week"]:focus:focus,
+div:not(.x-window) input[type="number"]:focus:focus,
+div:not(.x-window) input[type="email"]:focus:focus,
+div:not(.x-window) input[type="url"]:focus:focus,
+div:not(.x-window) input[type="search"]:focus:focus,
+div:not(.x-window) input[type="tel"]:focus:focus,
+div:not(.x-window) input[type="color"]:focus:focus,
+div:not(.x-window) .uneditable-input:focus:focus,
+div:not(.x-window) a:active,
+div:not(.x-window) input:active,
+div:not(.x-window) .btn:active,
+div:not(.x-window) .navbar-toggle:active,
+div:not(.x-window) .form-control:active,
+div:not(.x-window) .dropdown-toggle:active,
+div:not(.x-window) .btn-default:active,
+div:not(.x-window) textarea:focus:active,
+div:not(.x-window) input[type="text"]:focus:active,
+div:not(.x-window) input[type="password"]:focus:active,
+div:not(.x-window) input[type="datetime"]:focus:active,
+div:not(.x-window) input[type="datetime-local"]:focus:active,
+div:not(.x-window) input[type="date"]:focus:active,
+div:not(.x-window) input[type="month"]:focus:active,
+div:not(.x-window) input[type="time"]:focus:active,
+div:not(.x-window) input[type="week"]:focus:active,
+div:not(.x-window) input[type="number"]:focus:active,
+div:not(.x-window) input[type="email"]:focus:active,
+div:not(.x-window) input[type="url"]:focus:active,
+div:not(.x-window) input[type="search"]:focus:active,
+div:not(.x-window) input[type="tel"]:focus:active,
+div:not(.x-window) input[type="color"]:focus:active,
+div:not(.x-window) .uneditable-input:focus:active {
+  outline: #5B9DD9 auto 5px ;
+  outline-offset: -2px;
+}
+
+
+/*
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
+.h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small,
+h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small,
+.h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 small, .h1 small, 
+h2 small, .h2 small,
+h3 small, .h3 small,
+h1 .small, .h1 .small,
+h2 .small, .h2 .small,
+h3 .small, .h3 .small {
+  font-size: 65%;
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h4 small, .h4 small, 
+h5 small, .h5 small, 
+h6 small, .h6 small,
+h4 .small, .h4 .small,
+h5 .small, .h5 .small,
+h6 .small, .h6 .small {
+  font-size: 75%;
+}
+h1, .h1 {font-size: 36px;}
+h2, .h2 {font-size: 30px;}
+h3, .h3 {font-size: 24px;}
+h4, .h4 {font-size: 18px;}
+h5, .h5 {font-size: 14px;}
+h6, .h6 {font-size: 12px;}
+*/

@@ -1,0 +1,168 @@
+/* stylizacja laptopka */
+
+
+
+/* General laptop styling */
+.laptop-iframe {top:0;right:0;left:0;width:100%; height:100%;margin:0; padding:0; border:0;overflow-y:scroll;-webkit-overflow-scrolling:touch !important;}
+
+.laptop-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+.laptop {
+      background: #aa80aa;
+      width: 90%;
+      border: 15px solid #550055;
+      border-top: 20px solid #550055;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 1px #d1d2d4;
+     -webkit-overflow-scrolling:touch !important;
+}
+
+
+@media screen and (max-width: 5000px) {
+    .mobile-view-only {display:none;}
+    .laptop {height: 600px;}
+    .base:before {bottom: -305px;}
+    .laptop:before {
+      content: "";
+      bottom: -25px;
+      height: 25px;
+      width: 98%;
+      background: #fbeefb;
+      border-radius: 0 0 10px 10px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 1px 1px 20px 0px #0000005c;
+    }
+    .base {
+      height: 10px;
+      width: 98%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 1px 1px;
+    }
+
+    .base:before {
+      content: "";
+      width: 100px;
+      height: 10px;
+      background: #bcbdc1;
+      border-radius: 0 0 7px 7px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .mobile-view-only {display:none;}
+    .laptop {height: 500px;}
+    .base:before {bottom: -255px;}
+    .laptop:before {
+      content: "";
+      bottom: -25px;
+      height: 25px;
+      width: 98%;
+      background: #fbeefb;
+      border-radius: 0 0 10px 10px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 1px 1px 20px 0px #0000005c;
+    }
+    .base {
+      height: 10px;
+      width: 98%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 1px 1px;
+    }
+
+    .base:before {
+      content: "";
+      width: 100px;
+      height: 10px;
+      background: #bcbdc1;
+      border-radius: 0 0 7px 7px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .mobile-view-only {display:none;}
+    .laptop {height: 425px;}
+    .base:before {bottom: -217px;}
+    .laptop:before {
+      content: "";
+      bottom: -25px;
+      height: 25px;
+      width: 98%;
+      background: #fbeefb;
+      border-radius: 0 0 10px 10px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 1px 1px 20px 0px #0000005c;
+    }
+    .base {
+      height: 10px;
+      width: 98%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 1px 1px;
+    }
+
+    .base:before {
+      content: "";
+      width: 100px;
+      height: 10px;
+      background: #bcbdc1;
+      border-radius: 0 0 7px 7px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+/* Convert laptop to tablet */
+@media screen and (max-width: 768px) {
+    .laptop {
+        height: 700px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .mobile-view-only {display:none;}
+    .laptop:before {content:none;}
+    .base:before {bottom: 325px;background: #550055;}
+
+}
+
+@media screen and (max-width: 575px) {
+    .laptop-container {display:none !important;}
+    .laptop-iframe {display:none !important;}
+    .mobile-view-only {display:block;}
+    #skippy-demo {display:none !important;}
+}
+
