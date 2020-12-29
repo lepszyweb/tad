@@ -5162,8 +5162,7 @@ font-size: 2em;
 
 
 @media (max-width: 768px) {
-img.logotad {
-.res-local-header-wrapper img.logotad {max-width: 250px;}
+.res-local-header-wrapper img.logotad {max-width: 200px;}
 }	
 
 /* Local Header Styles */
