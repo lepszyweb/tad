@@ -5134,36 +5134,17 @@ fieldset[disabled] .btn-danger.active {
   -webkit-box-shadow: inset 0 20px 10px -20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0 20px 10px -20px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 20px 10px -20px rgba(0, 0, 0, 0.5);
-  height: 18em; /*===============zw ========= */
-
 }
-.tadrotate {
-
- font-family: 'franklin_gothic_heavyregular';
- font-size: 8em;
- color: white;
- transform:rotate(-90deg); 
-  float:left;
-}
-.fl-left{
-font-size: 2em;	
- color: white;	
- float:left;
-}
-
-
-.bannerek img {width: 300px}
-
 
 @media (min-width: 769px) {
 .res-local-header-wrapper img.logotad {max-width: 500px;}
 
 }	
-
-
-@media (max-width: 768px) {
+@media screen and (max-width: 479px) {
 .res-local-header-wrapper img.logotad {max-width: 200px;}
-}	
+}
+
+	
 
 /* Local Header Styles */
 .res-local-header .site-heading {
