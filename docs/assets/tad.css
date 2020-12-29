@@ -5438,11 +5438,25 @@ font-size: 2em;
   height: auto;
   padding: 0;
 }
-.res-global-header .navbar .navbar-header .navbar-brand img {
-  width: 220.692px;
-  height: 55.596px;
 
-}
+
+@media (min-width: 769px) {
+img.logotad {
+
+  width: 500px;
+  height: 250px;
+
+}	
+
+
+@media (max-width: 768px) {
+img.logotad {
+  width: 300px;
+  height: 150px;
+}	
+
+
+
 .res-global-header .navbar .navbar-content .divider {
   border-top: 1px solid #cccccc;
   padding-top: 5px;

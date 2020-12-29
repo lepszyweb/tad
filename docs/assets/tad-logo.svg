@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -44,13 +44,13 @@
      units="px"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="0.50094337"
-     inkscape:cx="537.72625"
-     inkscape:cy="190.8469"
+     inkscape:zoom="1.6840793"
+     inkscape:cx="252.66751"
+     inkscape:cy="108.68938"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g10"
+     inkscape:current-layer="text24"
      inkscape:document-rotation="0">
     <sodipodi:guide
        position="1301.5444,319.33711"
@@ -68,18 +68,24 @@
        height="250"
        x="0"
        y="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:104.235px;line-height:1.25;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.542892"
-       x="-224.21895"
-       y="94.541115"
+    <g
+       aria-label="TAD"
+       transform="rotate(-90)"
        id="text24"
-       transform="rotate(-90)"><tspan
-         sodipodi:role="line"
-         id="tspan22"
-         x="-224.21895"
-         y="94.541115"
-         style="stroke-width:0.542892">TAD</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:104.235px;line-height:1.25;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.542892">
+      <path
+         id="path35"
+         style="stroke-width:0.542892"
+         d="m -189.60967,41.711071 c 0,17.610015 0,35.220029 0,52.830044 -6.73524,0 -13.47047,0 -20.20571,0 0,-17.610015 0,-35.220029 0,-52.830044 -4.80119,0 -9.60238,0 -14.40357,0 0,-5.547664 0,-11.095327 0,-16.642991 16.33762,0 32.67523,0 49.01285,0 0,5.547664 0,11.095327 0,16.642991 -4.80119,0 -9.60238,0 -14.40357,0 z" />
+      <path
+         id="path37"
+         style="stroke-width:0.542892"
+         d="m -134.5911,94.541115 c -1.30633,-4.563674 -2.61266,-9.127349 -3.91899,-13.691023 -6.20931,0 -12.41863,0 -18.62794,0 -1.39116,4.563673 -2.78231,9.12735 -4.17347,13.691023 -5.76821,0 -11.53643,0 -17.30464,0 7.15937,-23.157678 14.31874,-46.315357 21.47811,-69.473035 7.51564,0 15.03129,0 22.54693,0 7.2442,23.157677 14.48839,46.315358 21.73259,69.473035 -7.2442,0 -14.48839,0 -21.73259,0 z m -18.93331,-28.85803 c 3.7663,0 7.53261,0 11.29891,0 -1.88315,-6.718272 -3.7663,-13.436543 -5.64945,-20.154815 -1.88315,6.718273 -3.76631,13.436542 -5.64946,20.154815 z" />
+      <path
+         id="path39"
+         style="stroke-width:0.542892"
+         d="m -106.44561,94.541115 c 0,-23.157678 0,-46.315357 0,-69.473035 12.372226,0.315106 24.835726,-0.802789 37.133615,0.963573 11.780389,2.4264 20.97914,12.620747 23.537139,24.18724 3.52225,13.796213 -0.798431,30.090952 -12.724324,38.541193 -6.645594,4.841642 -15.08265,6.003156 -23.10275,5.80159 -8.281326,-0.02147 -16.562234,-0.03155 -24.84368,-0.02056 z m 21.325421,-15.981343 c 4.682212,0.145439 10.493626,0.392445 13.52401,-3.917624 6.271862,-8.321607 5.924505,-20.297771 0.934259,-29.138863 -2.622207,-3.769754 -7.587514,-5.214198 -11.991123,-4.657446 -3.561188,-1.028649 -2.339262,3.886285 -2.467146,5.923858 0,10.596691 0,21.193383 0,31.790075 z" />
+    </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.0587px;line-height:1.25;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.542892"
