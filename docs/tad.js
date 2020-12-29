@@ -260,7 +260,7 @@ function Sa11y() {
             } else if (i !== 0 & level === 1) {
                 error = "<div class='tippy-heading'>Błąd</div> Na stronie może być tylko jeden nagłówek H1. Nagłówek H1 jest głównym nagłówkiem opisującym ogólny cel strony";
             } else if (prevLevel && level - prevLevel > 1) {
-                error = "<div class='tippy-heading'>Błąd</div> Niekonsekwentny poziom nagłówka. Zastosowane poziomy nie następują po sobie. Nagłówki nigdy nie powinny pomijać poziomów od <span class='sa11y-bold'>Nagłówek H" + prevLevel + "</span> do <span class='sa11y-red-text sa11y-bold'>Nagłówek H" + level + ".</span>";
+                error = "<div class='tippy-heading'>Błąd</div> Niekonsekwentny poziom nagłówka. Zastosowane poziomy nie następują po sobie. Nagłówki nigdy nie powinny pomijać poziomów np. od <span class='sa11y-bold'>Nagłówek H" + prevLevel + "</span> do <span class='sa11y-red-text sa11y-bold'>Nagłówek H" + level + ".</span>";
             } else if ($el.text().trim().length < 1) {
                 error = "<div class='tippy-heading'>Błąd</div> Znaleziono pusty nagłówek! Usuń puste znaczniki nagłówka lub dodaj brakujący tekst.";
                 $el.addClass("sa11y-link-text-fail");
@@ -473,7 +473,7 @@ function Sa11y() {
                     //Image contains both hyperlink
                     if ($el.parents("a").text().trim().length > 1) {
                         $el.addClass("sa11y-error-border");
-                        missingAltLinkButHasTextError = "<div class='tippy-heading'>Błąd</div> Obraz jest używany razem z sąsiadującym tekstem jako hiperłącze, obraz powinien być oznaczony jako dekoracyjny albo atrybut alt obrazu powinien być pusty."
+                        missingAltLinkButHasTextError = "<div class='tippy-heading'>Błąd</div> Obraz jest używany razem z sąsiadującym tekstem jako hiperłącze. Obraz powinien być oznaczony jako dekoracyjny albo atrybut alt obrazu powinien być pusty."
                         $el.closest("a").before('<div class="sa11y-instance-inline"><button class="sa11y-error-btn" data-tippy-content="' + missingAltLinkButHasTextError + '" >' + ErrorIcon + '</button></div>');
                     } else if ($el.parents("a").text().trim().length == 0) {
                         $el.addClass("sa11y-error-border");
@@ -522,7 +522,7 @@ function Sa11y() {
 
                 // Image warning if it is decorative and is not a link.
                 else if (text == "" && $el.parents().not("a[href]")) {
-                    decorativePassMessage = "<div class='tippy-heading'>Dobrze!</div> Obraz oznaczony jako <span class='sa11y-bold'>dekoracyjny.</span>. Jeśli jednak obraz przekazuje historię, nastrój lub ważne informacje - należy dodać tekst alternatywny."
+                    decorativePassMessage = "<div class='tippy-heading'>Dobrze!</div> Obraz oznaczony jako <span class='sa11y-bold'>dekoracyjny</span>. Jeśli jednak obraz przekazuje historię, nastrój lub ważne informacje - należy dodać tekst alternatywny."
                     $el.before('<div class="sa11y-instance"><button class="sa11y-pass-btn" data-tippy-content="' + decorativePassMessage + '" >' + PassIcon + '</button></div>');
                 }
 
@@ -546,7 +546,7 @@ function Sa11y() {
                 else if (text != "" && $el.parents().is("a") && $el.parents("a").text().trim().length > 1) {
                     this.anyWarning = true;
                     $el.addClass("sa11y-warning-border");
-                    AnchorLinkAndAlt = "<div class='tippy-heading'>Sprawdź to!</div> Łącze obrazu zawiera <span class='sa11y-bold'>zarówno tekst alternatywny, jak i sąsiadujący tekst łącza.</span>. Jeśli ten obraz jest dekoracyjny i jest używany w funkcji łącza do innej strony, należy rozważyć oznaczenie obrazu jako dekoracyjnego (pusty alt) - sąsiadujący tekst łącza powinien wystarczyć. <hr aria-hidden='true' class='tippy-tool-hr'>Tekst alternatywny: <span class='sa11y-bold'>" + altText + "</span>"
+                    AnchorLinkAndAlt = "<div class='tippy-heading'>Sprawdź to!</div> Łącze obrazu zawiera <span class='sa11y-bold'>zarówno tekst alternatywny, jak i sąsiadujący tekst łącza</span>. Jeśli ten obraz jest dekoracyjny i jest używany w funkcji łącza do innej strony, należy rozważyć oznaczenie obrazu jako dekoracyjnego (pusty alt) - sąsiadujący tekst łącza powinien wystarczyć. <hr aria-hidden='true' class='tippy-tool-hr'>Tekst alternatywny: <span class='sa11y-bold'>" + altText + "</span>"
                     $el.closest('a').before('<div class="sa11y-instance-inline"><button class="sa11y-warning-btn" data-tippy-content="' + AnchorLinkAndAlt + '" >' + WarningIcon + '</button></div>');
                 }
 
@@ -601,7 +601,7 @@ function Sa11y() {
             let $el = $(el);
             this.anyWarning = true;
             $el.addClass("sa11y-warning-border");
-            MissingCaptionsWarning = "<div class='tippy-heading'>Uwaga</div> Upewnij się, że <span class='sa11y-bold'>wszystkie filmy mają napisy rozszerzone.</span>. Zapewnianie podpisów dla wszystkich treści audio i wideo jest obowiązkowym wymogiem poziomu A. Napisy mają na celu wspieranie osób Głuchych lub słabosłyszących."
+            MissingCaptionsWarning = "<div class='tippy-heading'>Uwaga</div> Upewnij się, że <span class='sa11y-bold'>wszystkie filmy mają napisy rozszerzone</span>. Zapewnianie podpisów dla wszystkich treści audio i wideo jest obowiązkowym wymogiem poziomu A. Napisy mają na celu wspieranie osób Głuchych lub słabosłyszących."
             $el.before('<div><button class="sa11y-warning-btn" data-tippy-content="' + MissingCaptionsWarning + '" >' + WarningIcon + '</button></div>');
         });
 
@@ -610,7 +610,7 @@ function Sa11y() {
         if (soundcloudWarning.length > 0) {
             this.anyWarning = true;
             soundcloudWarning.addClass("sa11y-warning-border");
-            SoundCloudMessage = "<div class='tippy-heading'>Uwaga</div> Upewnij się, że istnieje <span class='sa11y-bold'>transkrypcja dla wszystkich podcastów.</span>. Zapewnianie transkrypcji treści audio jest obowiązkowym wymogiem poziomu A. Transkrypcje mają na celu wspieranie osób Głuchych lub słabosłyszących, ale każdy może z nich skorzystać. Rozważ umieszczenie transkrypcji poniżej lub w panelu akordeonowym."
+            SoundCloudMessage = "<div class='tippy-heading'>Uwaga</div> Upewnij się, że istnieje <span class='sa11y-bold'>transkrypcja dla wszystkich podcastów</span>. Zapewnianie transkrypcji treści audio jest obowiązkowym wymogiem poziomu A. Transkrypcje mają na celu wspieranie osób Głuchych lub słabosłyszących, ale każdy może z nich skorzystać. Rozważ umieszczenie transkrypcji poniżej lub w panelu akordeonowym."
             soundcloudWarning.before('<div><button class="sa11y-warning-btn" data-tippy-content="' + SoundCloudMessage + '" >' + WarningIcon + '</button></div>');
         }
 
