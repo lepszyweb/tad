@@ -16,7 +16,7 @@ TAD działa jako prosty progam testujący pojedyncze strony. Został zaprojektow
 
 
 ## Dokumentacja i Demo
-:arrow_right: [Zobacz witrynę i demo](https://lepszyweb.github.io/tad/)
+:arrow_right: [Zobacz witrynę i demo](https://tad.lepszyweb.pl)
 
 ## Kontakt
 Masz pytania? Email: audyt@lepszyweb.pl
