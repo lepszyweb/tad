@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="pl">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Kontrast i etykiety formularzy - Wszystkie zestawy reguł - Demo TAD</title>
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <div class="sa11y-website-frame-message">
+      <p style="display:none;" id="iframe-check"><a class="sa11y-exclude" href="contrast-labels.html" target="_blank">Otwórz tę stronę na nowej karcie dla lepszego doświadczenia.</a> <span class="fas fa-external-link-alt" aria-hidden="true"></span></p>
+      <p style="display:none;" id="newtabonly">Przeglądaj demo na nowej karcie. <a href="../index.html#demo">Wróć do dokumentacji.</a></p>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <span class="d-flex align-items-center text-white">
+          <strong>Demo TAD</strong>
+        </span>
+        <nav class="nav nav-masthead justify-content-center sa11y-ignore">
+          <a class="nav-link" href="errors.html">Błędy</a>
+          <a class="nav-link" href="warnings.html">Ostrzeżenia</a>
+          <a class="nav-link" href="pass.html">Bez błędów</a>
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Wszystkie reguły
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="headings-images.html">Nagłówki i obrazy</a>
+              <a class="dropdown-item" href="links-tables.html">Łącza i tabele</a>
+              <a class="dropdown-item active" href="contrast-labels.html">Kontrast i etykiety</a>
+              <a class="dropdown-item" href="other.html">Inne</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Kontrast i etykiety formularzy</h1>
+        <p class="lead">Upewnij się, że w ustawieniach TAD włączone są opcje <strong>Kontrast</strong> i <strong>Etykiety</strong>.</p>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div id="list-example" class="list-group sticky-top">
+              <strong class="mt-1 mb-2">Na tej stronie:</strong>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Kontrast</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-5">Etykiety</a>
+            </div>
+          </div>
+
+          <div class="col-md-10">
+            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+              
+              <h2 id="list-item-4">Kontrast</h2>
+			  <p><a href="https://github.com/jasonday/color-contrast">Wtyczka kontrastu</a> stworzona przez Jason Day.</p>
+			  <p>Aby zapobiec fałszywym alarmom, dodano prosty warunek wykluczający wszystkie elementy, których szerokość i wysokość są mniejsze niż 1 piksel <kbd>overflow:hidden;</kbd>. Niektóre wtyczki kontrastu fałszywie wskazują wizualnie ukryty tekst dla czytników ekranu, ponieważ kontrast nie działa.</p>	
+
+              <p>Podpowiedzi wskażą, czy jest to tekst o dużym, czy małym (zwykłym) rozmiarze, w tym fragment tekstu, który nie spełnia wymagań testu.</p>
+              <div class="ml-5 mt-4 mb-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>Przykład 1 - Zwykły tekst</h3>
+                    <p style="color:coral">Ten kolor zawodzi przy małym rozmiarze.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Przykład 2 - Duży tekst</h3>
+                    <h4 style="color:coral;font-size:1.5em">Ten kolor zawodzi również przy dużym rozmiarze.</h4>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6">
+                    <h3>Przykład 3 - Pole formularza</h3>
+                    <p>Kolor wprowadzanego tekstu jest za słaby.</p>
+                    <label for="contrastinput">Nazwa</label>
+                    <input id="contrastinput" type="text" style="color:coral" value="Adam">
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Przykład 4 - Ostrzeżenie</h3>
+                    <p>Ostrzeżenia dotyczące tekstu na tle.</p>
+                    <div class="example">
+                      <h4 class="background-image white" style="color:white">Tekst na tle obrazu wymaga ręcznego sprawdzenia</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="pb-3">
+              <h2 id="list-item-5">Pola formularzy</h2>
+              <p>Testy dostępności pól wejściowych formularzy.</p>
+              <div class="ml-5 mb-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>Przykład 1</h3>
+                    <p>Błąd: Pole bez etykiety lub z brakującym <kbd>id</kbd>.</p>
+                    <input type="text" />
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Przykład 2</h3>
+                    <p>Błąd: Pole z ID, ale etykieta pola nie ma atrybutu <kbd>for</kbd>.</p>
+                    <label>Nazwa</label>
+                    <input type="text" id="asdfg" />
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h3 id="ex3">Przykład 3</h3>
+                    <p id="ex3para">Ostrzeżenie: Pole z etykietą zapewnioną przez aria-label lub aria-labelledby. Upewnij się, że etykieta jest widoczna. Nie zaleca się tej metody etykietowania pól, bo etykieta zwykle nie jest widoczna.</p>
+                    <input aria-labelledby="ex3 ex3para" type="text" />
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Przykład 4</h3>
+                    <p>Dobrze: Pole formularza ma <kbd>id</kbd> i etykietę powiązaną za pomocą atrybutu <kbd>for</kbd>.</p>
+                    <label for="asdfgh">Adres</label>
+                    <input type="text" id="asdfgh" />
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h3>Przykład 5</h3>
+                    <p>Ostrzeżenie: Pole tekstowe, w którym <kbd>type='reset'</kbd>.</p>
+                    <input type="reset"/>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Przykład 6</h3>
+                    <p>Dobrze: Pole tekstowe, w którym <kbd>type='submit'</kbd></p>
+                    <input type="submit" />
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h3>Przykład 7</h3>
+                    <p>Dobrze: Pole tekstowe, w którym <kbd>type='button'</kbd>.</p>
+                    <input type="button" value="Input Button"/>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Przykład 8</h3>
+                    <p>Dobrze: Etykieta domyślna. <kbd>&lt;label&gt;Imię: &lt;input type="text"/&gt;&lt;label&gt;</kbd> </p>
+                      <label>
+                        Imię:
+                        <input type="text"/>
+                      </label>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h3>Przykład 9</h3>
+                    <p>Błąd: Etykieta domyślna bez tekstu. <kbd>&lt;label&gt;&lt;input type="text"/&gt;&lt;label&gt;</kbd> </p>
+                      <label>
+                        <input type="text"/>
+                      </label>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Przykład 10</h3>
+                    <p>Błąd: Lista wyboru bez powiązanej etykiety.</p>
+                    <label>Wybierz samochód:</label>
+                    <select name="cars">
+                      <option value="volvo">volvo</option>
+                      <option value="saab">saab</option>
+                      <option value="mercedes">mercedes</option>
+                      <option value="audi">audi</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h3>Przykład 11</h3>
+                    <p>Błąd: Etykieta obszaru tekstowego nie jest z nim powiązana.</p>
+                    <label>Opinia o LepszyWeb.pl</label>
+                    <textarea rows="2" cols="50">
+                    </textarea>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Przykład 12</h3>
+                    <p>Dobrze: Obszar tekstowy ma etykietę.</p>
+                    <label for="review">Opinia o LepszyWeb.pl:</label>
+                    <textarea id="review" rows="2" cols="50">
+                    </textarea>
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h3>Przykład 13</h3>
+                    <p>Błąd: Pole tekstowe, w którym <kbd>type="image"</kbd>, ale nie ma atrybutu alt lub aria-label (dotyczy ikony).</p>
+                    <label for="q">Szukaj:</label><input type="text" name="q" id="q">&nbsp; <input type="image" alt=" " width="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1280px-Vector_search_icon.svg.png" class="">
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Przykład 14</h3>
+                    <p>Dobrze: Pole formularza ma <kbd>id</kbd>, które pasuje do atrybutu <kbd>for</kbd> w etykiecie znajdującej się pod polem.</p>
+                    <input type="text" id="asd"/><br>
+                    <label for="asd">Etykieta pod polem</label>
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h3>Przykład 15</h3>
+                    <p>Dobrze: Pola formularza mają atrybut <kbd>title</kbd> jako dostępną nazwę.</p>
+                    <input type="text" title="Numer telefonu"><br><br>
+                    <input type="text" title="Adres">
+                  </div>
+                  <div class="col-md-6"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+  <footer class="text-muted sa11y-ignore">
+      <div class="container">
+        <p>Dostosuj TAD, aby kierował tylko do określonych regionów strony. Na przykład, <a href="#">to łącze</a> będzie ignorowane. Jeśli edytor treści nie może go edytować, nie skanuj go. Celowo zastosowano bardzo niski kontrast do celów testowych.</p>
+      </div>
+  </footer>
+ <!-- Bootstrap + Jquery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function() {
+   if (window.top == window) {
+     $("#iframe-check").remove();
+   } else {
+      $("#iframe-check").css("display","block")
+   }
+
+   if (window.top != window) {
+     $("#newtabonly").css("display","none")
+   } else {
+      $("#newtabonly").css("display","block")
+   }
+   $('body').scrollspy({ target: '#list-example' })
+});
+</script>
+
+  <!--Jquery (Yes, loaded a second time on purpose...)-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+
+  <!-- Tippy.js CDN scripts -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+ <!--Sa11y-->
+    <!--TAD (Twój asysten dostępności - dołącz skrypty zamiast Sa11y)-->
+    <link rel="stylesheet" href="https://lepszyweb.pl/plik/tadek.min.css" />
+    <script src="https://lepszyweb.pl/plik/tadek-polish.min.js"></script>	
+    <script src="https://lepszyweb.pl/plik/tadek.min.js"></script>
+ 
+</body>
+</html>

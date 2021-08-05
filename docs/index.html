@@ -1,74 +1,32 @@
 <!DOCTYPE html>
-<html lang="pl" class="">
-
+<html lang="en" class="">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="./assets/links.css" type="text/css">
-  <link rel="stylesheet" href="./assets/laptop.css" type="text/css">  
-  <link rel="stylesheet" href="./assets/tad.css" type="text/css">
-  <link rel="stylesheet" href="./assets/aria.accordion.css" type="text/css">  
-  
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/main.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
   <!-- Primary Meta Tags -->
-  <title>TAD - Twój Asystent Dostępności</title>
-  <meta name="title" content="TAD - Twój Asystent Dostępności - LepszyWeb.pl">
-  <meta name="description" content="TAD to narzędzie wspomagające zapewnianie dostępności, które wizualnie wyróżnia typowe problemy z dostępnością i użytecznością.">
-  <meta name="author" content="Pracownia Dostępności Cyfrowej. LepszyWeb.pl">
+  <title>Sa11y - accessibility quality assurance assistant - Ryerson University</title>
+  <meta name="title" content="Sa11y - accessibility quality assurance assistant - Ryerson University">
+  <meta name="description"
+    content="Sa11y is an accessibility quality assurance tool that visually highlights common accessibility and usability issues.">
+  <meta name="author" content="Ryerson University">
 
-<link rel="shortcut icon" href="./favicon/favicon.ico">
-
-<!--
-<link rel="canonical" href="https://testy.lepszyweb.pl/index.html"> -->
-<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-<link rel="manifest" href="./favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#7d4594">
-
-<meta property="og:title" content="TAD - Twój Asystent Dostępności - LepszyWeb.pl" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://tad.lepszyweb.pl" />
-<meta property="og:site_name" content="TAD - Twój Asystent Dostępności - LepszyWeb.pl" />
-<meta property="og:image" content="https://tad.lepszyweb.pl/assets/tad-banner.png" />
-<meta property="og:image:alt" content="TAD - Twój Asystent Dostępności - LepszyWeb.pl" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:description" content="TAD to narzędzie wspomagające zapewnianie dostępności, które wizualnie wyróżnia typowe problemy z dostępnością i użytecznością." />
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '487063571839875');
-fbq('track', 'PageView');
-</script>
-
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=487063571839875&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ryersondmp.github.io/sa11y/">
+  <meta property="og:title" content="Sa11y - accessibility quality assurance assistant - Ryerson University">
+  <meta property="og:description"
+    content="Sa11y is an accessibility quality assurance tool that visually highlights common accessibility and usability issues.">
+  <meta property="og:image" content="https://ryersondmp.github.io/sa11y/assets/images/github-banner.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ryersondmp.github.io/sa11y/">
+  <meta property="twitter:title" content="Sa11y - accessibility quality assurance assistant - Ryerson University">
+  <meta property="twitter:description"
+    content="Sa11y is an accessibility quality assurance tool that visually highlights common accessibility and usability issues.">
+  <meta property="twitter:image" content="https://ryersondmp.github.io/sa11y/assets/images/github-banner.png">
 </head>
 
 <body>
@@ -78,12 +36,23 @@ src="https://www.facebook.com/tr?id=487063571839875&ev=PageView&noscript=1"
         <div class="row">
           <div class="col-xs-12">
             <div class="res-global-header">
-              <a id="skip-to-main" class="btn btn-default sa11y-exclude" href="#main-content">Treść główna</a>
-              <nav aria-label="pomiń" class="navbar navbar-default">
+              <nav aria-label="global" class="navbar navbar-default">
                 <div class="container-fluid">
                   <div class="navbar-header">
-                    <a class="navbar-brand" href="https://lepszyweb.pl/"> <img src="assets/lw_logo-cz.svg" alt="LepszyWeb.pl">
+                    <a class="navbar-brand" href="https://www.ryerson.ca/"><img src="assets/images/ryerson_logo.svg"
+                        alt="Ryerson University homepage.">
                     </a>
+                  </div>
+                  <div class="navbar-content">
+                    <div class="navbar-right">
+                      <ul id="gh-other-content" class="nav navbar-nav navbar-left">
+                        <li>
+                          <a href="https://github.com/ryersondmp/sa11y">
+                            <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </nav>
@@ -101,10 +70,12 @@ src="https://www.facebook.com/tr?id=487063571839875&ev=PageView&noscript=1"
             <div class="local-header-section col-xs-12">
               <div class="res-local-header">
                 <div class="row template-local-header">
-                  <div class="local-header-section col-xs-12" style="text-align:center">
-<h1><img class="logotad" src="./assets/tad-logo.svg" alt="Twój asystent dostępności"></h1>
-
-</div>
+                  <div class="local-header-section col-xs-12 text-center">
+                    <h1 class="site-heading">
+                      <span style="font-size:4em">Sa11y</span>
+                      <span class="text-center" style="font-size:1em!important;display:block;">the accessibility quality
+                        assurance assistant</span>
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -114,493 +85,416 @@ src="https://www.facebook.com/tr?id=487063571839875&ev=PageView&noscript=1"
       </div>
     </div>
   </div>
-    <div class="resHorizontalNavigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <nav aria-label="główna" class="navbar res-horizontal-navigation">
-              <ul class="nav navbar-nav">
-                <li>
-                  <a href="#features">
-                    Funkcje
-                  </a>
-                </li>
+  <div class="resHorizontalNavigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <nav aria-label="primary" class="navbar res-horizontal-navigation">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#features">
+                  Features
+                </a>
+              </li>
 
-                <li>
-                  <a href="#demo">
-                    Demo
-                  </a>
-                </li>
+              <li>
+                <a href="#demo">
+                  Demo
+                </a>
+              </li>
 
-                <li>
-                  <a href="#install">
-                    Instalacja
-                  </a>
-                </li>
-                <li>
-                  <a href="#acknowledgements">
-                    Podziękowania
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+              <li>
+                <a href="#install">
+                  Install
+                </a>
+              </li>
+              <li>
+                <a href="#acknowledgements">
+                  Acknowledgements
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="row template-content">
-      <main id="mainContent" class="content-area-section col-sm-12">
-        <div class="sr-only" id="main-content" tabindex="-1">Jesteś w obszarze treści głównej</div>
-
-
-        <div class="sa11y-hero">
-          <div class="container">
-            <p class="hero-p text-center">TAD to narzędzie dla autorów treści <strong>wspomagające zapewnianie dostępności</strong>.  <strong>Wyróżnia&nbsp;wizualnie</strong>&nbsp;typowe problemy i podpowiada, jak je naprawić.</p>
+  <div class="row template-content">
+    <main id="mainContent" class="content-area-section col-sm-12">
+      <div class="sr-only" id="main-content" tabindex="-1">You are now in the main content area</div>
+      <div class="sa11y-hero">
+        <div class="container">
+          <p class="hero-p text-center">Sa11y is an <strong>accessibility quality assurance</strong> tool that <strong>visually highlights</strong> common accessibility and usability issues. Geared towards content authors, Sa11y straightforwardly identifies errors or warnings at the source with a simple tooltip on how to fix them.</p>
+        </div>
+      </div>
+      <section>
+        <div class="container pt40">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2 id="features">Features <i class="fa fa-star" aria-hidden="true"></i></h2>
+              <p>Sa11y works as a simple in-page checker that is designed to be easily customized and integrated into any content management system (CMS) to facilitate good accessibility practices. Sa11y works best in a templated <abbr title="Content Management System">CMS</abbr> environment, although is also available as a bookmarklet. Sa11y is <em>not</em> a comprehensive code analysis tool. Sa11y exclusively highlights content issues.</p>
+              <ul>
+                <li>Over 50 test conditions.</li>
+                <li>Free and open source.</li>
+                <li>Concise tooltips explain issues right at the source.</li>
+                <li>Low tech: No complex API or integrations.</li>
+                <li>Easily customizable: add your custom rulesets.</li>
+                <li>Automatic: checks content on page load.</li>
+                <li>Additional (toggleable) checks: Contrast, form labels, readability, links (Advanced).</li>
+                <li>Dark mode.</li>
+              </ul>
+            </div>
+            <div class="col-sm-6 text-center p20">
+              <h3 class="pt40">Made for content authors</h3>
+              <img src="assets/images/coder-vs-comms.svg"
+                alt="Illustration of a gauge pointing to a content author instead of a web developer." />
+            </div>
           </div>
         </div>
-
-
-        <section>
-          <div class="container pt40">
-            <div class="row">
-              <div class="col-sm-6">
-                <h2 id="features">Funkcje <i class="fa fa-star" aria-hidden="true"></i></h2>
-                <p>TAD działa jako prosty program testujący pojedyncze strony. Został&nbsp;zaprojektowany tak, aby można go było łatwo zintegrować z&nbsp;dowolnym systemem zarządzania treścią (<abbr title="Content Management System">CMS</abbr>), ale może również działać jako skryptozakładka. TAD&nbsp;nie&nbsp;jest narzędziem do wszechstronnej analizy kodu.</p>
-                <ul>
-                  <li>Ponad 30 warunków testowych.</li>
-                  <li>Łatwe, intuicyjne podpowiedzi wyjaśniające problemy.</li>
-                  <li>Darmowe i otwarte źródło.</li>
-                  <li>Bez skomplikowanego API lub integracji.</li>
-                  <li>Proste zestawy reguł.</li>
-                  <li>Łatwy do dostosowania: dodaj własne zestawy reguł.</li>
-                </ul>
-              </div>
-
-
-              <div class="col-sm-6 text-center p20">
-                <h3 class="pt40">Zaprojektowany dla autorów treści</h3>
-                <img src="assets/coder-vs-comms.svg" alt="Wskazówka wskazuje twórcę treści zamiast projektanta stron internetowych." />
-              </div>
-
+      </section>
+      <section>
+        <div class="container">
+          <h3 class="pt30">Automatic</h3>
+          <div class="row">
+            <div class="col-sm-8">
+              <p>Sa11y does a quick scan on page load. If there are any errors or warnings, the toggle will display a notification badge with the total number of issues detected. Red indicates errors, while yellow indicates there are warnings only. Content authors should be encouraged to enable Sa11y even if there are no notifications!</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <img loading="lazy" width="250" class="responsive-img" src="assets/images/notification.png"
+                alt="Three Sa11y toggles: one with a red notification badge, one yellow, and one without any badge." />
             </div>
           </div>
-        </section>
-
-
-        <section>
-          <div class="container">
-            <h3 class="pt30">Stany</h3>
-            <p>TAD sygnalizuje trzy stany.</p>
-            <div class="row">
-              <div class="col-sm-4 text-center">
-                <img class="responsive-img" width="340" src="assets/tad-error.png" alt="Panel błędu, który mówi, że znaleziono błąd dostępności i opisuje go!">
-                <h4>Błędy</h4>
-                <p class="p20">Wykrywa i sygnalizuje typowe błędy użyteczności i&nbsp;dostępności na&nbsp;poziomie&nbsp;A&nbsp;i&nbsp;AA  WCAG 2.1.</p>
-              </div>
-
-              <div class="col-sm-4 text-center">
-                <img class="responsive-img" width="340" src="assets/tad-warning.png" alt="Panel ostrzeżenia, który mówi, że nie znaleziono żadnych błędów dostępności, ale zaleca sprawdzenie uwagi.">
-                <h4>Uwagi</h4>
-                <p class="p20">Ostrzega przed potencjalnymi problemami i&nbsp;monituje o&nbsp;ręczne przejrzenie elementu.</p>
-              </div>
-
-              <div class="col-sm-4 text-center">
-                <img class="responsive-img" width="340" src="assets/tad-no-errors.png" alt="Screenshot of pass panel that says no accessibility errors found.">
-                <h4>Dobrze!</h4>
-                <p class="p20">Nie wykryto żadnych problemów z&nbsp;dostępnością lub użytecznością. Kciuk w&nbsp;górę! Masz prawo do  satysfakcji!</p>
-              </div>
+          <h3 class="pt30">States</h3>
+          <p>Sa11y has three simple states.</p>
+          <div class="row">
+            <div class="col-sm-4 text-center">
+              <img loading="lazy" class="responsive-img" width="500" src="assets/images/sa11y-error.png"
+                alt="Screenshot of panel that shows: 4 accessibility errors and 3 warning detected!">
+              <h4>Errors</h4>
+              <p class="p20">Accessibility and usability issues are detected. Sa11y highlights common WCAG 2.1 Level A and AA accessibility issues.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <img loading="lazy" class="responsive-img" width="500" src="assets/images/sa11y-warning.png"
+                alt="Screenshot of panel that shows: Please review warning.">
+              <h4>Warnings</h4>
+              <p class="p20">Warns you of potential accessibility or usability issues, and prompts you to manually review an element.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <img loading="lazy" class="responsive-img" width="500" src="assets/images/sa11y-no-errors.png"
+                alt="Screenshot of panel that shows: No accessibility errors found.">
+              <h4>Pass</h4>
+              <p class="p20">No apparent accessibility or usability issues are detected. A "thumbs up" to let you know you're good.</p>
             </div>
           </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <h3 class="pt30">Pokaż konspekt</h3>
-            <p>Przycisk Pokaż konspekt wyświetla strukturę nagłówków strony, podobną do spisu treści książki. Konspekt strony daje wizualny obraz tego, jak sekcje strony są ze sobą połączone. Nagłówki powinny zawsze mieć strukturę, która przekazuje hierarchię treści.
-			  </p>
-
-            <div class="row">
-              <div class="col-md-6 text-center">
-                <img class="responsive-img" width="400" src="assets/konspekt-errors.png" alt="Konspekt strony z błędną hierarchią nagłówków">
-              </div>
-              <div class="col-md-6 text-center">
-                <img class="responsive-img" width="400" src="assets/konspekt-no-errors.png" alt="Konspekt strony z poprawną hierarchią nagłówków.">
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <section class="pb80">
-          <div class="container">
-            <h3>Zestaw reguł testowych</h3>
-            <p>TAD zgłasza poniższe błędy i ostrzeżenia.</p>
-            <!-- This excellent accordion panel created by Scott O'Hara https://github.com/scottaohara/a11y_accordions-->
-            <div data-aria-accordion data-multi data-transition data-default="none" id="accGen">
-
-              <h4 data-aria-accordion-heading>
-                Błędy
-              </h4>
-              <div data-aria-accordion-panel>
-                <ul>
-                  <li>14 warunków tekstów alternatywnych.</li>
-                  <li>Nieopisowe łącza (np. kliknij tutaj, czytaj więcej).</li>
-                  <li>Brak komórek nagłówkowych w tabeli <kbd>&lt;th&gt;</kbd>.</li>
-                  <li>Tabele z pustymi komórkami nagłówkowymi.</li>
-                  <li>Tabele używajace nagłówków semantycznych (H1, H2) zamiast nagłówków tabel <kbd>&lt;th&gt;</kbd>.</li>
-                  <li>Pominięte poziomy nagłówków.</li>
-                  <li>Zbyt długie nagłówki.</li>
+          <!-- This excellent accordion panel created by Scott O'Hara https://github.com/scottaohara/a11y_accordions-->
+          <div data-aria-accordion data-multi data-transition data-default="none" id="accGen">
+            <h4 data-aria-accordion-heading>
+              View all checks
+            </h4>
+            <div data-aria-accordion-panel>
+              <p>Sa11y checks for the following content related issues and warnings.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Errors</h5>
                   <ul>
-                    <li><strong>Uwaga:</strong> to nie jest błąd WCAG 2.1.</li>
+                    <li>Images
+                      <ul>
+                        <li>Missing alternative text.</li>
+                        <li>Alt text contains a file extension.</li>
+                        <li>Alt text contains only placeholder text.</li>
+                      </ul>
+                    </li>
+                    <li>Links
+                      <ul>
+                        <li>Nondescript link text like "learn more" or "click here".</li>
+                        <li>Empty hyperlinks.</li>
+                        <li>Links that only contain an icon font without an accessible name or label.</li>
+                      </ul>
+                    </li>
+                    <li>Tables
+                      <ul>
+                        <li>Missing table headers.</li>
+                        <li>Empty table headers.</li>
+                        <li>Table contains semantic headings.</li>
+                      </ul>
+                    </li>
+                    <li>Headings
+                      <ul>
+                        <li>Headings that skip levels.</li>
+                        <li>Page does not start with a Heading 1 or Heading 2.</li>
+                        <li>Empty headings.</li>
+                        <li>Missing Heading 1.</li>
+                      </ul>
+                    </li>
+                    <li>Poor text contrast.</li>
+                    <li>Inputs missing labels.</li>
+                    <li>Page language not declared.</li>
                   </ul>
-                  <li>Struktura nagłówków nie rozpoczyna się od H1.</li>
-                  <li>Blok cytatu użyty jako nagłówek.</li>
-                  <li>Kontrast tekstu.</li>
-                  <li>Brakujące etykiety pól w formularzu.</li>
-                  <li>Niezadeklarowany język strony.</li>
-                  <li>Zduplikowana wartość atrybutu <kbd>id</kbd>.</li>
-                </ul>
-              </div>
-
-              <h4 data-aria-accordion-heading>
-                Ostrzeżenia
-              </h4>
-              <div data-aria-accordion-panel>
-                <p>Ostrzeżenia mogą monitować o <strong>ręczne przejrzenie elementu</strong>, zawierać <strong>sugestie dotyczące poprawy</strong> użyteczności/dostępności lub ostrzegać o problemach z&nbsp;dostępnością, których <strong>nie można wykryć programowo</strong>.</p>
-                <ul>
-                  <li>Obrazy używane jako hiperłącza: przejrzyj tekst alternatywny opisujący lokalizację łącza.</li>
-                  <li>Wykryte WSZYSTKIE WIELKIE LITERY/wielkie litery</li>
-                  <li>Kontrast, którego nie można określić programowo, na przykład tekst na tle obrazu.</li>
-                  <li>Ostrzeżenie w przypadku widżetów wideo, aby sprawdzić, czy istnieją napisy rozszerzone.</li>
-                  <li>Ostrzeżenie w przypadku widżetów audio, aby sprawdzić, czy istnieją transkrypcje.</li>
-                  <li>Ostrzeżenie o wszystkich łączach do PDF.</li>
-                  <li>Ostrzeżenie przed nadmiernym korzystaniem z otwierania łącza na nowych kartach lub w nowych oknach.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="sa11y-demo text-center" id="demo">
-          <div class="container pb30">
-
-            <div class="pb30">
-              <h2>Demo <i class="fa fa-laptop" aria-hidden="true"></i>
-              </h2>
-              <p class="lead">Kliknij przycisk, aby rozpocząć. Przejdź do różnych stron, aby wyświetlić wszystkie trzy stany. Po włączeniu TAD pozostanie włączony nawet podczas przechodzenia do różnych stron. Po prostu kliknij ten sam przycisk, aby wyłączyć TAD.</p>
-            </div>
-
-            <a id="skippy-demo" class="vhs-only vhs-only-focusable" href="#install">
-              <span class="skiplink-text">Pomiń ramkę z Demo</span><span class="fa fa-level-down" aria-hidden="true"></span>
-            </a>
-
-            <!-- CSS Laptop effect by https://codepen.io/Jeffen/pen/NqBXzb -->
-            <div class="laptop-container sa11y-exclude">
-              <div class="laptop sa11y-exclude">
-
-                <iframe title="Demonstracja TAD w ramce wbudowanej" class="laptop-iframe sa11y-exclude" src="examples/errors.html"></iframe>
-
-              </div>
-              <div class="base sa11y-exclude" aria-hidden="true"></div>
-            </div>
-
-            <a class="mobile-view-only" href="examples/errors.html" target="_blank">Pokaż demo na nowej karcie!</a>
-
-          </div>
-        </section>
-
-
-        <section class="pb80 pt40">
-          <div class="container">
-            <h2 id="install">Instalacja <i class="fa fa-wrench" aria-hidden="true"></i></h2>
-
-            <h3 class="pt20">Skryptozakładka <span class="label-default">Eksperymentalnie</span></h3>
-            <p>TAD może działać jako skryptozakładka w dowolnej przeglądarce internetowej. Po prostu przeciągnij na pasek zakładek w Twojej przeglądarce jeden z&nbsp;poniższych przycisków. Następnie przejdź na stronę, którą chcesz zbadać i uaktywnij zakładkę.</p>
-			<p>Jak zainstalować TAD na swojej stronie, przeczytaj poniżej.</p>
-
-
-            <div class="resButtons section pt20">
-              <div class="res-buttons">
-                <div class="buttonDefault">
-                  <div class="row pb15">
-                    <div class="row-height">
-                      <div class="col col-xs-12 col-sm-6 outside-full-height">
-                        <div class="inside inside-full-height">
-                          <a class="btn btn-default btn-block btn-sa11y sa11y-exclude"
-                            href="javascript:void((function(doc){document.body.appendChild(document.createElement('script')).src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';var popperJS=document.createElement('script');popperJS.src='https://unpkg.com/@popperjs/core@2';var tippyJS=document.createElement('script');tippyJS.src='https://unpkg.com/tippy.js@6';var sa11yJS=document.createElement('script');sa11yJS.src='https://tad.lepszyweb.pl/tad.js';document.body.appendChild(popperJS);popperJS.onload=popperJS.onreadystatechange=function(){document.body.appendChild(tippyJS);tippyJS.onload=tippyJS.onreadystatechange=function(){document.body.appendChild(sa11yJS)}}})(document))">
-                            <span class="fa fa-bookmark" aria-hidden="true"></span> <span>TAD</span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col col-xs-12 col-sm-6 outside-full-height">
-                        <div class="inside inside-full-height">
-                          <a class="btn btn-default btn-block btn-sa11y"
-                            href="javascript:void((function(doc){document.body.appendChild(document.createElement('script')).src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';var popperJS=document.createElement('script');popperJS.src='https://unpkg.com/@popperjs/core@2';var tippyJS=document.createElement('script');tippyJS.src='https://unpkg.com/tippy.js@6';var sa11yJS=document.createElement('script');sa11yJS.src='https://tad.lepszyweb.pl/tadcontrast.js';document.body.appendChild(popperJS);popperJS.onload=popperJS.onreadystatechange=function(){document.body.appendChild(tippyJS);tippyJS.onload=tippyJS.onreadystatechange=function(){document.body.appendChild(sa11yJS)}}})(document))">
-                            <span class="fa fa-paint-brush" aria-hidden="true"></span> <span>TAD z kontrolerem kontrastów</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h5>Warnings</h5>
+                  <ul>
+                    <li>Headings
+                      <ul>
+                        <li>Blockquotes incorrectly used as headings.</li>
+                        <li>Headings that are too long (Not a WCAG 2.1 requirement).</li>
+                        <li>Bolded text used as headings.</li>
+                      </ul>
+                    </li>
+                    <li>Images
+                      <ul>
+                        <li>Hyperlinked images: ensure alt text describes link location.</li>
+                        <li>Images containing redundant words in alt text like "image of" or "graphic of".</li>
+                      </ul>
+                    </li>
+                    <li>Use of ALL CAPS/Uppercase.</li>
+                    <li>Contrast that cannot be programatically determined, such as text with an image background.</li>
+                    <li>Closed captions for videos.</li>
+                    <li>Transcripts for podcasts and audio content.</li>
+                    <li>Check PDF for accessibility or recommend to convert into HTML.</li>
+                    <li>Links (Advanced)
+                      <ul>
+                        <li>Links that open in a new tab without warning.</li>
+                        <li>Links with identical names should have an equivalent purpose.</li>
+                        <li>Links to PDF and other files without warning.</li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h3 class="pt30">Show Outline</h3>
+          <p>The Show Outline button displays the page's heading structure, similar to the table of contents for a book. The page outline gives you a visual idea of how each part is interconnected.</p>
 
-            <h3 class="pt20">Dla programistów i webmasterów</h3>
-            <ul class="pt20 pb20">
-			
-              <li>Pobierz <a href="https://github.com/lepszyweb/tad"> kod źródłowy TAD z Github <span class="fa fa-github" aria-hidden="true"></span></a></li>
-			  <li>Pobierz <a href="https://github.com/ryersondmp/sa11y">oryginalny kod źródłowy SAlly z Github <span class="fa fa-github" aria-hidden="true"></span></a></li>
-              <li>Zobacz demo <a href="https://tad.lepszyweb.pl/examples/full-list.html">wszystkich reguł testowych</a> w akcji.
-            </ul>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <img loading="lazy" class="responsive-img" width="500" src="assets/images/outline-errors.png"
+                alt="Screenshot of the Page Outline panel with hierarchy issues.">
+            </div>
+            <div class="col-md-6 text-center">
+              <img loading="lazy" class="responsive-img" width="500" src="assets/images/outline-no-errors.png"
+                alt="Screenshot of the Page Outline panel with a clean, good heading hierarchy.">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb80">
+        <div class="container">
+          <h3 class="pt30">Show Settings: additional checks</h3>
+          <p>Sa11y has four optional checks and a dark mode setting that can be enabled in the "Show Settings" tab. Although these checks are "optional", it does not imply they are not important! Depending on the website theme, plugin, or <abbr title="Content Management System">CMS</abbr>, they may not need to be tested for every time. For example, some form plugins automatically provide a label for each form input.</p>
+          <div class="row">
+            <div class="col-md-8 text-center">
+              <img loading="lazy" class="responsive-img" width="1000" src="assets/images/settings-panel.png"
+                alt="Screenshot of settings panel in dark mode showing toggles for contrast, form labels, links (advanced), readability and dark mode. There is also a tooltip warning about links that open in a new tab without warning.">
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li><strong>Contrast</strong>
+                  <ul>
+                    <li>Checks the contrast of various text elements.</li>
+                  </ul>
+                </li>
+                <li><strong>Form labels</strong>
+                  <ul>
+                    <li>Checks all form inputs for a corresponding label.</li>
+                    <li>Usability recommendation to remove "Reset" buttons on forms.</li>
+                  </ul>
+                </li>
+                <li><strong>Links (Advanced)</strong>
+                  <ul>
+                    <li>Links that open in a new tab without warning.</li>
+                    <li>Links with identical names should have equivalent purpose.</li>
+                    <li>Links to PDF and other files without warning.</li>
+                  </ul>
+                </li>
+                <li><strong>Readability</strong>
+                  <ul>
+                    <li>Estimates the readability score of all paragraph and list content.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              <h3>Readability</h3>
+              <p>Sa11y can <strong>estimate</strong> the readability score from all paragraphs and list content within the <strong>main</strong> content area. A good readability score is an indication that your writing is understandable and easy to digest. It is based on the average length of sentences and words on your page, using a formula known as the <a href="https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#Flesch_reading_ease">Flesch reading-ease test (Wikipedia).</a></p>
 
-            <!-- This excellent accordion panel created by Scott O'Hara https://github.com/scottaohara/a11y_accordions-->
-            <div data-aria-accordion data-multi data-transition data-default="none" id="accGen2">
+              <p>A "good" reading score is between 60 and 100. Sometimes it may be difficult to achieve a good readability score. Most of your pages may say "difficult". Remember that this feature is only used to <strong>estimate</strong> the readability of your content. It should only be used as a <strong>reference,</strong> and not an indication of conformance.</p>
 
-              <h4 data-aria-accordion-heading>
-                Instalacja
-              </h4>
-              <div data-aria-accordion-panel>
-                <p class="pb20">TAD opiera się na jQuery i działa najlepiej, używając biblioteki podpowiedzi, która zawiera system pozycjonowania zapewniający, że podpowiedzi nigdy nie są ukrywane przez konfliktowe style CSS, takie jak <kbd>overflow:hidden;</kbd>. Ta wersja TAD została zbudowana przy użyciu <a href="https://atomiks.github.io/tippyjs/">Tippy.js</a>, wysoce konfigurowalnej biblioteki podpowiedzi.</p>
+              <p>You can enable the readability feature in the settings panel.</p>
 
-                <p>Aby zainstalować na swojej stronie, wstaw TAD zaraz po znaczniku skryptu jQuery i tuż przed znacznikiem zamykajacym </body>. Uwzględnij zarówno Tippy.js, jak i Popper.js przed TAD. Odwiedź stronę <a
-                    href="https://atomiks.github.io/tippyjs/">Pierwsze kroki Tippy.js, aby pobrać najnowszą wersję.</a></p>
+              <h4>Tips to improve score</h4>
+              <ul>
+                <li>Keep sentences around 15 words on average.</li>
+                <li>Avoid sentences greater than 25 words.</li>
+                <li>Split long sentences up, or use bullet points.</li>
+                <li>Avoid complex words or words with many syllables.</li>
+              </ul>
 
-                <h5 class="pt20">Przykładowa instalacja:</h5>
-                <pre><code class="language-html sa11y-exclude">//jQuery Slim 3x
-&lt;script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"&gt;&lt;/script&gt;
-
-//Tippy.js v6 CDN (biblioteka Tooltip)
-&lt;script src="https://unpkg.com/@popperjs/core@2"&gt;&lt;/script&gt;
-&lt;script src="https://unpkg.com/tippy.js@6"&gt;&lt;/script&gt;
-
-//TAD - (pobierz kod źródłowy z naszego Github)
-&lt;script src="tadcontrast.js"&gt;&lt;/script&gt;</code></pre>
-
-                <h6 class="pt20">Uwaga dotycząca dostępności:</h6>
-                <p>Ta wersja domyślnie dołącza podpowiedzi na końcu <kbd>body</kbd>, aby zapewnić, że podpowiedzi nie zostaną ukryte przez konflikt stylów CSS. Jeśli dostosujesz podpowiedzi tak, aby zawierały interaktywną zawartość, przeczytaj dokumentację dotyczącą <a href="https://atomiks.github.io/tippyjs/v6/accessibility/#interactivity">tworzenia dostępnych interaktywnych podpowiedzi dla użytkowników klawiatury.</a></p>
-                <h5 class="pt20">Strony internetowe oparte na bootstrapie</h5>
-                <p>Wersje Bootstrap 3 i 4 już zawierają podpowiedzi/okna popovers obsługiwane przez bibliotekę pozycjonowania Poppers.js.  Ze względu na wydajność możesz zastąpić znakowanie HTML tippy.js znacznikami etykiet narzędzi Bootstrap.</p>
-              </div>
-
-
-              <h4 data-aria-accordion-heading>
-                Tworzenie własnych reguł testowych
-              </h4>
-              <div data-aria-accordion-panel>
-                <p>Twórz własne warunki i zestawy reguł, aby strategicznie egzekwować wytyczne dotyczące dostępności, użyteczności lub stylu internetowego organizacji.</p>
-
-                <ol>
-                  <li>Stwórz swój stan (testowany warunek).</li>
-                  <li>Dodaj <kbd>this.anyWarning = true;</kbd> lub <kbd>this.noErrors = false;</kbd>, aby wskazać stan ostrzeżenia lub błędu.</li>
-                  <li>Dodaj odpowiednie klasy CSS.</li>
-                </ol>
-
-                <h5 class="pt20">Przykład: Ostrzegaj redaktorów treści przed nadużywaniem komponentu.</h5>
-                <p>Przykładowy warunek wykrywa, czy na stronie wykryto więcej niż jedno Powiadomienie. Jeśli wykryje więcej niż jedną instancję klasy CSS <kbd>.announcement-component</kbd>, zostanie to wskazane jako ostrzeżenie. Użyj selektora jQuery <kbd>gt:(0)</kbd>, a przycisk ostrzegawczy pojawi się w każdym wystąpieniu z wyjątkiem pierwszego komponentu.</p>
-                <p></p>
-				
-                <div class="pt20">
-                  <pre><code class="language-js">var checkAnnouncement = $('.announcement-component').length;
-
-if (checkAnnouncement > 1) {
-
-    this.anyWarning = true;
-
-    WarningMessage = </code><code class="language-html">'Więcej niż jeden komponent Powiadomienia! Komponent Powiadomienia
-    powinien być używany strategicznie i oszczędnie. Powinien być używany, 
-	aby zwrócić uwagę lub ostrzec użytkowników o czymś ważnym. 
-	Niewłaściwe użycie tego składnika sprawia, że jest mniej wydajny i skuteczny. 
-	Ten komponent jest semantycznie oznaczony jako Powiadomienia 
-	dla osób korzystających z czytników ekranu.'</code>
-    <code class="language-js">
-      $('.announcement-component:gt(0)').addClass("sa11y-warning-border");
-      $('.announcement-component:gt(0)').before('&lt;div class="sa11y-instance"&gt;&lt;button class="sa11y-link-warning-btn" data-tippy-content="' + WarningMessage + '" &gt;' + WarningIcon + '&lt;/button&gt;&lt;/div&gt;');
-}</code></pre>
-
-                </div>
-              </div>
+              <h4>Technical details about readability score</h4>
+              <p>Sa11y calculates the readability score based on all paragraph (&lt;p&gt; tags) and list content (&lt;li&gt; tags). A low score does not affect the pass or fail state of Sa11y. This feature works for English content only (at the moment).</p>
 
             </div>
-
-
-            <h2 id="acknowledgements" class="pt40">Podziękowania <i class="fa fa-users" aria-hidden="true"></i>
-            </h2>
-			<p>TAD jest polskim rozgałęzieniem projektu SA11y stworzonego przez <a href="https://www.ryerson.ca/dmp">Digital Media Projects</a>, <a href="https://www.ryerson.ca/ccs">Computing and Communication Services (CCS)</a> na Ryerson University w Toronto w Kanadzie.</p>
-            <p>Projekt, opracowanie, kodowanie i testowanie:</p>
-            <ul>
-              <li><a href="https://ca.linkedin.com/in/adamchaboryk">Adam Chaboryk,</a> specjalista dostępności IT</li>
-              <li><a href="https://www.linkedin.com/in/b1luong">Benjamin Luong,</a> specjalista dostępności internetowej</li>
-              <li><a href="https://www.linkedin.com/in/arshad-mohamed">Arshad Mohammed,</a> asystent dostępnosci internetowej</li>
-              <li><a href="https://ca.linkedin.com/in/kylepadernilla">Kyle Padernilla,</a> asystent dostępnosci internetowej</li>
-            </ul>
-			<h3>Adaptacja i tłumaczenie na język polski</h3>
-            <ul>
-              <li><a href="https://www.facebook.com/stefan.wajda.5/">Stefan Wajda</a></li>
-            </ul>
-
-            <h3 class="pt30">Zbudowane z</h3>
-            <ul>
-              <li>TAD (i Sa11y) są adaptacją <a href="https://khan.github.io/tota11y/">Tota11y autorstwa Khan Academy.</a></li>
-              <li>Biblioteka Tooltip autorstwa <a href="https://atomiks.github.io/tippyjs/">Tippy.js</a></li>
-              <li><a href="https://www.jqueryscript.net/other/color-contrast-checker.html">Wtyczka kontrastu jQuery</a> została stworzona przez jasonday.</li>
-              <li>Ikony są tworzone przez <a href="https://fontawesome.com/">Font Awesome.</a></li>
-              <li>Działa z <a href="https://jquery.com/">jQuery.</a></li>
-            </ul>
-            <h3 class="pt30">Licencja</h3>
-            <p>TAD i Sa11y są licencjonowane na warunkach MIT.</p>
-            <h2 id="contact" class="pt40">Kontakt <i class="fa fa-envelope" aria-hidden="true"></i>
-            </h2>
-            <p>Jeśli masz jakieś pytania lub uwagi, napisz do <a href="mailto:audyt@lepszyweb.pl">audyt@lepszyweb.pl</a></p>
+            <div class="col-md-5">
+              <img loading="lazy" class="responsive-img" width="500" src="assets/images/readability.png"
+                alt="Screenshot of the Readability panel within Page Outline. Readability section shows the score out of 100, difficulty, average number of words per sentence, percentage of complex words, and total words.">
+            </div>
           </div>
-        </section>
-      </main>
-    </div>
+
+          <h3 class="pt30">Quality assurance</h3>
+          <div class="row">
+            <div class="col-md-3">
+              <p>Creating an inclusive experience requires intention. Content authors have the ability to easily review their work. For example, Sa11y does not only flag images missing alternative (alt) text, but content authors can also easily review the alt text on images for relevance and quality. Sa11y has several test conditions to ensure alt and link text follow best practices.</p>
+            </div>
+
+            <div class="col-md-7 text-center">
+              <img loading="lazy" class="responsive-img pt40" src="assets/images/quality-alt-text.png"
+                alt="Screenshot of two images. One with a Good button, and the other with an Error button and red border. Long description below." aria-describedby="long-desc">
+              <p class="sr-only" id="long-desc">The first image has a Good button with a tooltip that says: Good, the alt text for this image is: "Large mountains of sand in the Nambia desert. The second image is a flower with a red error border whose tooltip says: Error, non descript or placeholder alt text within the linked image found. Ensure the alt text describes the destination of the link.</p>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="sa11y-demo text-center" id="demo">
+        <div class="container pb30">
+
+          <div class="pb30">
+            <h2>Demo <i class="fa fa-laptop" aria-hidden="true"></i>
+            </h2>
+            <p class="lead">Click the toggle to get started. Navigate to different pages to view all three states. Once enabled, Sa11y will remain on even when navigating to different pages. Simply click the same button to turn off Sa11y.</p>
+          </div>
+
+          <a id="skippy-demo" class="vhs-only vhs-only-focusable" href="#install">
+            <span class="skiplink-text">Skip iFrame Demo</span><span class="fa fa-level-down" aria-hidden="true"></span>
+          </a>
+          <!-- CSS Laptop effect by https://codepen.io/Jeffen/pen/NqBXzb -->
+          <div class="laptop-container sa11y-ignore">
+            <div class="laptop sa11y-ignore">
+              <iframe loading="lazy" title="Sa11y website demonstration inside an iFrame."
+                class="laptop-iframe sa11y-ignore" src="examples/errors.html"></iframe>
+            </div>
+            <div class="base sa11y-ignore" aria-hidden="true"></div>
+          </div>
+          <a class="mobile-view-only" href="examples/errors.html" target="_blank">View the demo in a new tab!</a>
+
+        </div>
+      </section>
+      <section class="pb80 pt40">
+        <div class="container">
+          <h2 id="install">Install <i class="fa fa-wrench" aria-hidden="true"></i></h2>
+
+          <h3 class="pt20">Bookmarklet <span class="label-default">Experimental</span></h3>
+          <p><i class="fa fa-info-circle" aria-hidden="true"></i> Please note that bookmarklets do not work on all websites because of security policies that block external code. Secondly, it may take a few seconds to load because the code is being injected into the page you are browsing.</p>
+
+          <ol>
+            <li>Simply drag the "Sa11y" button below into your bookmarks bar.</li>
+            <li>Click the bookmark on any webpage.</li>
+          </ol>
+
+          <a class="btn-sa11y"
+            href="javascript:void((function(doc){document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/ryersondmp/sa11y@latest/bookmarklet/sa11y-en.min.js';})(document))"><span
+              class="fa fa-bookmark" aria-hidden="true"></span> <span>Sa11y</span></a>
+
+          <h3 id="how" class="pt20">How to use</h3>
+          <p>Click the toggle in the bottom right corner. If using assistive technology, the button is labelled "Check Accessibility".</p>
+
+          <div class="row">
+            <div class="col-md-6" style="padding: 20px;">
+              <h4 class="pt20"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip #1</h4>
+              <p>Use the "Skip to issue" button to quickly cycle through all errors, warnings, or "good" buttons. The tooltip will automatically open. You can also press <kbd>alt</kbd> <kbd aria-label="period">.</kbd> with a keyboard.</p>
+              
+            </div>
+            <div class="col-md-6" style="padding: 20px;">
+              <h4 class="pt20"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip #2</h4>
+              <p>Sa11y also checks hidden content. If you don't see an error or warning button, use the "Skip to issue" button to find it. An alert will pop up with a preview of the issue message. If you do not know what the alert is referencing, it might be a false positive or an issue that a developer might need to fix.</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <img loading="lazy" class="responsive-img" width="800" src="assets/images/skip-to-issue.png"
+              alt="Screenshot of Skip to issue button and an alert stating that the item may be hidden in an accordion or tab component."></div>
+
+          <h3 class="pt20">For developers and web administrators</h3>
+          <p>Sa11y works best in a templated <abbr title="Content Management System">CMS</abbr> environments. Create your own conditions and rulesets to strategically enforce your organization's accessibility, usability, or web style guidelines. Customize Sa11y to target specific areas of the page (e.g. <kbd>main</kbd> content area only) - don't highlight issues content authors can't fix! Add exclusions to ignore false positives or prevent Sa11y from highlighting content within social media widgets or other iFrame content.</p>
+          <ul class="pb10">
+            <li>Fork or contribute: <a href="https://github.com/ryersondmp/sa11y">Sa11y on Github <span
+                  class="fa fa-github" aria-hidden="true"></span></a></li>
+            <li>View a demonstration of <a href="https://ryersondmp.github.io/sa11y/examples/full-list.html">All
+                Rulesets</a> in action.</li>
+            <li>View <a href="https://github.com/ryersondmp/sa11y/tree/master#for-developers-and-web-administrators">installation and configuration notes on GitHub.</a></li>
+          </ul>
+
+          <h2 id="acknowledgements" class="pt20">Acknowledgements <i class="fa fa-users" aria-hidden="true"></i>
+          </h2>
+          <p>Development lead by <a href="https://ca.linkedin.com/in/adamchaboryk">Adam Chaboryk,</a> <small><abbr title="Certified Professional in Web Accessibility">CPWA</abbr></small>, IT Accessibility Specialist. Created within Digital Media Projects, Computing and Communication Services (CCS) at Ryerson University in Toronto, Canada.</p>
+
+          <h3 class="pt20">Previous contributors</h3>
+          <ul>
+            <li><a href="https://ca.linkedin.com/in/farhanhmd">Farhan Mohammed,</a> web accessibility & usability
+              assistant (2020/2021)</li>
+            <li><a href="https://ca.linkedin.com/in/kylepadernilla">Kyle Padernilla,</a> web accessibility & usability
+              assistant (2019/2020)</li>
+            <li><a href="https://www.linkedin.com/in/arshad-mohamed">Arshad Mohammed,</a> web accessibility & usability
+              assistant (2018/2019)</li>
+            <li><a href="https://www.linkedin.com/in/b1luong">Benjamin Luong,</a> web accessibility & usability
+              assistant (2016/2017)</li>
+          </ul>
+
+          <h3 class="pt20">Other thanks</h3>
+          <ul>
+            <li>Sa11y is an adaptation of <a href="https://khan.github.io/tota11y/">Tota11y by Khan Academy.</a></li>
+            <li>Tooltip library powered by <a href="https://github.com/atomiks/tippyjs">Tippy.js</a></li>
+            <li><a href="https://github.com/jasonday/color-contrast">Colour contrast</a> plugin created by Jason Day.
+            </li>
+            <li>The readability feature is adapted from a <a
+                href="https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/tools/readability-bookmarklet/">Readability
+                Bookmarklet</a> created by Greg Kraus at North Carolina State University.</li>
+            <li>The icons are made by <a href="https://fontawesome.com/">Font Awesome.</a></li>
+            <li>Sa11y is built with <a href="https://jquery.com/">jQuery.</a></li>
+            <li>The bookmarklet version of Sa11y is hosted on <a href="https://www.jsdelivr.com/">jsDelivr,</a> a <abbr title="Content Delivery Network">CDN</abbr> for open source projects.</li>
+            <li>John Jameson (Princeton University) maintains a fork of Sa11y called <a
+                href="https://github.com/itmaybejj/editoria11y">Editoria11y</a> which is available as a turnkey Drupal module. Sa11y and Editoria11y share a lot of code!</li>
+            <li>The "Skip to content" button on this page is a great open source script called <a
+                href="https://github.com/paypal/skipto">SkipTo.</a></li>
+          </ul>
+
+          <h3 class="pt20">Featured</h3>
+          <ul>
+            <li>Trusted by <a href="https://www.queensu.ca/webpublish/resources/accessibility">Queen's University,</a> <a href="https://uit.stanford.edu/accessibility/testing/browser-plugins">Stanford University,</a> <a href="https://laurentian.ca/web/accessibility#:~:text=Sa11y">Laurentian University,</a> and Victoria Island University</li>
+            <li>Adapted by <a href="https://accessibility.princeton.edu/news/introducing-editoria11y#:~:text=Sa11y">Princeton University</a></li>
+            <li>Featured on <a href="https://www.digitala11y.com/accessibility-bookmarklets-testing/">DigitalA11y Blog</a>, <a href="https://www.a11yproject.com/resources/#:~:text=Sa11y">The A11Y Project</a>, and the <a href="https://www.w3.org/WAI/ER/tools/#sa11y">W3C's Web Accessibility Evaluation Tools List!</a></li>
+          </ul>
+
+          
+          <h2 id="contact" class="pt40">Contact <i class="fa fa-envelope" aria-hidden="true"></i>
+          </h2>
+          <p>If you have any questions or feedback, please email <a
+              href="mailto:adam.chaboryk@ryerson.ca">adam.chaboryk@ryerson.ca</a></p>
+        </div>
+      </section>
+    </main>
+  </div>
   <div class="resGlobalFooter">
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer class="resGlobalFooter">
       <div class="res-local-footer-wrapper">
         <div class="container">
           <div class="resLocalFooter">
             <div class="res-local-footer">
               <div class="row template-local-footer">
-                <div class="col-sm-3">
-				   <h3 class="foter-module-title">Informacje kontaktowe</h3>
-				        <div class="nav-module">
-				            <ul class="list-unstyled">
-                                            <li class="mb-2"><strong>Pracownia Dostępności Cyfrowej. LepszyWeb.pl<br></strong></li>
-                                            <li class="d-flex flex-row">
-                                                <i class="fa fa-map-marker mr-3" aria-hidden="true"></i>
-                                                <span> 44-335 Jastrzębie Zdrój<br>ul. Opolska 8/7
-                                            </span>
-                                            </li>
-                                            <li><i class="fa fa-phone mr-3" aria-hidden="true"></i><a class="text-white" href="tel:728832814"> tel: 728-832-814</a></li>
-                                            <li><i class="fa fa-phone mr-3" aria-hidden="true"></i><a class="text-white" href="tel:608089112"> tel: 608-089-112</a></li>
-                                            <li><i class="fa fa-envelope mr-3" aria-hidden="true"></i><a href="mailto:kontakt@lepszyweb.pl" class="text-white"> email: kontakt@lepszyweb.pl</a>
-                                            </li>
-                            </ul>
-					    </div>										
-				
-				</div>
-                <div class="col-sm-3">
-				
-				<h3 class="foter-module-title">Usługi</h3>
-				        <div class="nav-module">
-				            <ul class="menu nav flex-column dark">				
-                                        <li class="item-244 nav-item"><a href="https://wcag.lepszyweb.pl/" class="nav-link px-0">Jak spełnić WCAG?</a></li>
-                                        <li class="item-244 nav-item"><a href="https://lepszyweb.pl/walidator" class="nav-link px-0">ALLY - walidator dostępności</a></li>
-                                        <li class="item-244 nav-item"><a href="https://lepszyweb.pl/andi" class="nav-link px-0">ANDI - inspektor dostępności</a></li>
-                                        <li class="item-244 nav-item"><a href="https://raport.lepszyweb.pl/" class="nav-link px-0">Generator raportów z oceny</a></li>
-                                        <li class="item-222 nav-item"><a href="https://deklaracja.lepszyweb.pl" class="nav-link px-0">Generator
-                                            deklaracji dostępności</a></li>
-                                        <li class="item-227 nav-item"><a href="https://kontrast.lepszyweb.pl" class="nav-link px-0">Wyszukiwarka kontrastów</a></li>
-                                        <li class="item-243 nav-item"><a href="https://przedipo.lepszyweb.pl" class="nav-link px-0">Demo Przed i Po</a></li>
-                            </ul>
-					    </div>		
-
-
+                <div class="col-sm-4 text-center">&nbsp;</div>
+                <div class="col-sm-4 text-center">
+                  <img loading="lazy" src="assets/images/RU-DMP-CCS.svg"
+                    alt="Logo for Digital Media Projects, Computing and Communications Services (CCS)."
+                    class="pt30 pb30" width="360">
                 </div>
-                <div class="col-sm-3">
-				<h3 class="foter-module-title">Walidator - informacje</h3>
-				        <div class="nav-module">
-				            <ul class="category-module mod-list nav flex-column dark">					
-
-
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/5-rodzajow-wynikow-testow-dostepnosci">5 rodzajów wyników
-                                            testów dostępności </a>
-
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/audyt-wspomagany">Audyt
-                                            wspomagany</a>
-
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/dlaczego-metoda-rgaa">Dlaczego
-                                            metoda RGAA?</a>
-
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/orientacyjny-miernik-dostepnosci">Orientacyjny miernik
-                                            dostępności </a>
-
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/rgaa-jako-metoda-oceniania-dostepnosci">RGAA jako metoda
-                                            oceniania dostępności</a>
-
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/struktura-wynikow">Struktura
-                                            wyników</a>
-
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/szybki-audyt-stron">Szybki
-                                            audyt stron</a>
-
-
-                                        </li>
-                            </ul>
-					    </div>					
-				
-				</div>
-				
-                <div class="col-sm-3">
-				<h3 class="foter-module-title">Szkolenia</h3>
-						<div class="nav-module">
-				            <ul class="category-module mod-list nav flex-column dark">	
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/audyt-dostepnosci-we-wlasnym-zakresie">Audyt dostępności we
-                                            własnym zakresie</a>
-
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dokumentow-pdf">Tworzenie dokumentów PDF</a>
-
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dostepnych-dokumentow-biurowych">Tworzenie
-                                            dostępnych dokumentów biurowych </a>
-
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/zarzadzanie-dostepnoscia-cyfrowa">Zarządzanie dostępnością
-                                            cyfrową</a>
-                                        </li>
-                            </ul>
-					    </div>					
-				
-				</div>				
-				
-				
-				
-				
+                <div class="col-sm-4 text-center">&nbsp;</div>
               </div>
             </div>
           </div>
@@ -610,41 +504,52 @@ if (checkAnnouncement > 1) {
         <div class="container">
           <div class="row footer-top">
             <div class="col-sm-12 text-center">
-						<span class="sp-copyright">
-                        &copy;2020 Pracownia Dostępności Cyfrowej LepszyWeb.pl. Wszystkie prawa zastrzeżone.
-                        Witryna wygenerowana:  29 grudnia  2020 r. </span> 
-						<a class="mod-articles-category-title nav-link px-0" href="./deklaracja-dostepnosci.html">Deklaracja dostępności</a>
-                            </span>
-
+              <strong>© Ryerson University</strong>
             </div>
           </div>
         </div>
       </div>
     </footer>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
   </div>
-  <script src="./assets/script.min.js"></script>
-</body>
+  <script src="assets/script.min.js"></script>
 
+  <style>
+    .skip-to [role=menuitem] .label {
+      padding-left: 4px;
+    }
+
+    .skip-to [role=menu] {
+      border-color: #6b6b6b !important;
+    }
+
+    .skip-to button {
+      border-width: 0 2px 2px 2px !important;
+      border-color: #6b6b6b !important;
+    }
+
+    .anchorjs-link {
+      text-decoration: none !important;
+    }
+  </style>
+  <!-- SkipTo plugin: https://github.com/paypal/skipto-->
+  <script src="https://cdn.disability.illinois.edu/skipto.min.js"></script>
+  <!-- AnchorJs plugin: https://www.bryanbraun.com/anchorjs/-->
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  <script>
+    var SkipToConfig = {
+      'settings': {
+        'skipTo': {
+          landmarks: 'main, [role="main"], nav[aria-label="primary"]',
+          headings: 'main h1, main h2, main h3',
+          accesskey: 'S',
+          colorTheme: 'default',
+          buttonLabel: 'Skip to content',
+          focusBorderColor: '#5bc2f4',
+        }
+      }
+    };
+    anchors.add();
+  </script>
+</body>
 </html>

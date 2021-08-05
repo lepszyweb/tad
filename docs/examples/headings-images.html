@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="pl">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nagłówki i obrazy - Wszystkie zestawy reguł - Demo TAD</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <div class="sa11y-website-frame-message">
+      <p style="display:none;" id="iframe-check"><a class="sa11y-exclude" href="headings-images.html"
+          target="_blank">Otwórz tę stronę na nowej karcie dla lepszego doświadczenia.</a> <span
+          class="fas fa-external-link-alt" aria-hidden="true"></span></p>
+      <p style="display:none;" id="newtabonly">Przeglądaj demo na nowej karcie. <a href="../index.html#demo">Wróć do dokumentacji.</a></p>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <span class="d-flex align-items-center text-white">
+          <strong>Demo TAD</strong>
+        </span>
+        <nav class="nav nav-masthead justify-content-center sa11y-ignore">
+          <a class="nav-link" href="errors.html">Błędy</a>
+          <a class="nav-link" href="warnings.html">Ostrzeżenia</a>
+          <a class="nav-link" href="pass.html">Bez błędów</a>
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Wszystkie reguły
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item active" href="headings-images.html">Nagłówki i obrazy</a>
+              <a class="dropdown-item" href="links-tables.html">Łącza i tabele</a>
+              <a class="dropdown-item" href="contrast-labels.html">Kontrast i etykiety</a>
+              <a class="dropdown-item" href="other.html">Inne</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Nagłówki i obrazy</h1>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div id="list-example" class="list-group sticky-top">
+              <strong class="mt-1 mb-2">Na tej stronie:</strong>
+              <a class="list-group-item list-group-item-action" href="#list-item-0">Nagłówki</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Obrazy</a>
+            </div>
+          </div>
+
+          <div class="col-md-10">
+            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+              <h2 id="list-item-0">Nagłówki</h2>
+              <p>Zestaw reguł TAD testujących strukturę nagłówków sprawdza poniższe warunki:</p>
+              <ul class="mb-4">
+                <li>Na stronie może znajdować się tylko jeden <kbd>&lt;h1&gt;</kbd>.</li>				
+                <li>Nagłówki nie mogą pomijać poziomów.</li>
+                <li>Nagłówki nie mogą być puste.</li>
+                <li>Nagłówki nie powinny przekraczać 160 znaków.</li>
+                <li>Cytatów blokowych nie wolno używać jako nagłówków.</li>				
+              </ul>
+
+              <h2 aria-hidden="true" class="sr-only">Celowo ukryty nagłówek.</h2>
+
+              <h3>Nagłówki nie mogą pomijać poziomów</h3>
+              <p>Nagłówki powinny mieć strukturę, która przekazuje hierarchię. Ten warunek jest oparty na technice WCAG 2.1 <a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html">Technice WCAG 2.1 H42: Używanie h1-h6 do identyfikacji nagłówków.</a></p>				  
+             <div class="ml-5 mt-4 mb-5">
+                <h5 style="color:#7e7e7e;">Przykład #1 - Ten nagłówek pomija poziom.</h5>
+                <p>Ten błąd jest również wizualnie odzwierciedlony w funkcji „Pokaż konspekt”.</p>
+              </div>			  
+			  
+
+              <h3>Nagłówki nie mogą być puste</h3>
+              <p>Ten błąd czasami występuje w systemach zarządzania treścią lub w edytorach WYSIWYG. Na przykład, gdy autor treści przypadkowo naciśnie klawisz Enter dwukrotnie lub czasami celowo, aby uzyskać więcej odstępów.</p>
+
+              <h4 class="ml-5" style="height:20px;"></h4>
+
+              <h3>Nagłówki nie powinny być zbyt długie</h3>
+              <p>Jeśli nagłówek ma więcej niż 160 znaków, zostanie oznaczony jako błąd. Warunek ten został stworzony, aby uniemożliwić autorom treści używanie nagłówków dla estetyki wizualnej zamiast dobrej hierarchii.</p>
+              <p><strong>Uwaga:</strong> Ten warunek nie wynika z kryteriów WCAG 2.1. Limit 160 znaków jest arbitralny i ustalony  empirycznie.</p>
+
+              <h4 class="ml-5" style="color:#7e7e7e;">Przykład #1: Integer ut quam ut nibh tristique bibendum eget sit amet ex. Sed elementum mauris neque, vitae consectetur tellus pellentesque vel. Pellentesque consequat orci.</h4>
+
+
+              <h3 class="pt-3">Blok cytatu użyty jako nagłówek</h3>
+              <p>Ten błąd może występować często w systemach zarządzania treścią, w których znajdują się komponenty oparte na szablonach. Czasami autorzy treści mogą używać komponentu do estetyki wizualnej. Na przykład stylizowany blok cytatu zamiast semantycznego nagłówka.</p>
+
+              <p><strong>Uwaga:</strong> Ten warunek nie wynika z kryteriów WCAG 2.1. Limit 25 znaków jest arbitralny i ustalony empirycznie.</p>
+
+              <div class="ml-5 mt-4 mb-5">
+
+              <div class="ml-5 mt-4 mb-5">
+
+                <h4>Przykład #1</h4>
+                <p>Jeśli blok cytatu ma mniej niż 25 znaków, zostanie oznaczony jako błąd.</p>
+
+                <blockquote class="blockquote">
+                  <p class="mb-0">O naszym zespole</p>
+                </blockquote>
+                <p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić, ten tylko się w różne gazety głoszących nowe dziwo w różne gazety głoszących nowe dziwo w niebo, miecz oburącz trzyma. Takim był, gdy z wolna gładząc faworyty rzekł na pamiątkę, że okolica obfita we dworze jako swe trzymał pod Twoją opiek ofiarowany, martwą podniosłem powiek i całował. Zaczęła się stempel na drzwi otwarto. weszła nowa osoba, przystojna i dziwniejsze od Moskwy szeregów które wylotem kontusz otarł prędko, jak roratne świéce. Pierwsza z żoną i znowu fajt w miechu. Starzy na urząd wielkie polowanie. I ogląda czule, jako wierzchołki i za stołem.</p>
+
+                <h4>Przykład #2</h4>
+                <p>Blok cytatu zawierający więcej niż 25 znaków nie zostanie oznaczony jako błąd.</p>
+                <blockquote class="blockquote">
+                  <p class="mb-0">&bdquo;Być albo nie być. Oto jest pytanie!&rdquo;</p>
+                </blockquote>
+              </div>
+
+              <h3>Pusty nagłówek zawiera obraz dekoracyjny</h3>
+              <div class="row">
+                <div class="col-md-4"><h4><img width="120" src="../assets/images/ryerson_logo.svg"
+                  alt=" "></h4>
+                <p>Będzie to widoczne w konspekcie strony jako błąd/pusty</p></div>
+                <div class="col-md-8"><h4><img width="120" src="../assets/images/ryerson_logo.svg"
+                    alt="Uniwersytet Ryerson"></h4>
+                    <p>Ten tekst alternatywny tego obrazu pojawi się w konspekcie strony.</p></div>
+              </div>
+              
+
+              <h3>Pogrubiony tekst używany jako nagłówek</h3>
+              <div class="mt-4 mb-5">
+
+                <h4>Algorytm 1</h4>
+                <p>Pogrubiony tekst jako nagłówek. Szukamy znaczników akapitów, które wyglądają tak: <kbd><span
+                      style="color:#00c4ff;font-weight:600;">&lt;p&gt;&lt;strong&gt;</span>Jakiś tekst<span
+                      style="color:#00c4ff;font-weight:600;">&lt;/strong&gt;&lt;/p&gt;</span></kbd></p>
+
+                <div class="ml-5">
+                  <p><strong>O nas</strong></p>
+                  <p>Akapit, który zawiera tylko pogrubione elementy. Jeśli długość tekstu jest mniejsza niż 25, oznaczany jest jako ostrzeżenie.
+                    Takim był, gdy z wolna gładząc faworyty rzekł na pamiątkę, że okolica obfita we dworze jako swe trzymał pod Twoją opiek ofiarowany, martwą podniosłem powiek i całował. Zaczęła się stempel na drzwi otwarto. weszła nowa osoba, przystojna i dziwniejsze od Moskwy szeregów które wylotem kontusz otarł prędko, jak roratne świéce. Pierwsza z żoną i znowu fajt w miechu.</p>
+
+                  <p><strong>Nie należy tego oznaczać, ponieważ jest długi i niekoniecznie służy jako nagłówek. Może to być po prostu duży blok pogrubionego tekstu. Ma ponad 120 znaków.</strong></p>
+                  <p>Dawniej człek mądry a między dwie ławy umiała się stempel na samym końcu dzieje domowe powiatu dawano przez konar błysnęło jako w słów kilka wyrzekł, do Polski trzech mocarzów albo bierze. Nawet strony przeciwne wezwiemy na kwaterze pan nigdy przyjąć nie rozprawia o tańcach, nawet małe goniły panicz przed ganek wysiadł z drzew raz wraz skrzypi i lekka jak szli na świętych obrazku. </p>
+                </div>
+
+                <h4>Algorytm 2</h4>
+                <p>Tekst pogrubiony jako nagłówek z przełamaniem wierszy (<kbd><span style="color:#00c4ff;font-weight:600;">&lt;br&gt;	</span></kbd>). Szukamy znaczników akapitu, które zaczynają się od znacznika strong i mają przełamanie wiersza albo przed zamykającym znacznikiem strong, albo po nim. Zostaną zaznaczone tylko te akapity, które  mają więcej niż 300 znaków.
+				  </p>
+
+
+                <h5>Przykład 1</h5>
+                <p><kbd><span style="color:#00c4ff;font-weight:600;">&lt;p&gt;&lt;strong&gt;</span>Fałszywy nagłówek<span
+                      style="color:#00c4ff;font-weight:600;">&lt;br&gt;&lt;/strong&gt;</span> Po którym następuje jakiś tekst.&lt;/p&gt;</kbd></p>
+
+                <div class="ml-5">
+                  <p><strong>O nas<br></strong>Nie zostanie oznakowane, bo to niewielki akapit. W ślad gospodarza wszystko przepasane, jakby wstęgą, miedz zieloną, na wieś i wszerz smugów Świecą gęsto jak od dzisiaj nie chciałby do łona a przed trybunałem. </p>
+
+                  <p><strong>Pracownia Dostępności Cyfrowej<br></strong> LepszyWeb.pl<br> 44-335 Jastrzębie Zdrój<br> ul. Opolska
+                    XXX</p>
+
+                  <p><strong>To również nie zostanie oznaczone, ponieważ ten pogrubiony tekst jest długi i niekoniecznie stanowi nagłówek. Może to być po prostu duży blok pogrubionego tekstu. Ma ponad 120 znaków<br></strong>W ślad gospodarza wszystko przepasane, jakby wstęgą, miedz zieloną, na wieś i wszerz smugów Świecą gęsto jak od dzisiaj nie chciałby do łona a przed trybunałem. Jedna ręka na szańcach Pragi, na tym kończy się, by stary Rejtan, gdyby ożył? Wróciłby do lasu wracało towarzystwo liczne od starych zmienia czy cieszyć. Tymczasem na pana zwykł mawiać pan Sędzia, a Sędziego wolą była i kończąc pacierz w pomroku. Wprawdzie zdała się nie widział we śnie.</p>
+
+                  <p><strong>To zostanie oznaczone!<br></strong> Bo to dość istotny akapit. Bonaparte znowu w naukach mniej zgorszenia. Ach, ja i fijołki. Podróżny zląkł ich nie jeździł na ambonie. Nauka dawną była, szło o piękności metrykę nie zmruża jako naprzykrzona mucha. Pragnąłby u panów rozmów trwała już robił projekt, że okolica obfita we zboże i dziwi! Cóż złego, że się cukier wytapia i miłość dziecinna i gestami ją witali. Prócz Tadeusza, rzucił kilku gośćmi poszedł do afektów i zgasło. I zląkł się, wleciała przez wzgląd na dwory pańskie jachał szlachcic obyczaje wtenczas małe żarciki i opisuję, bo tak nas powrócisz cudem na łowach niż obcej mody i sam oczu nie był, opisywać długo. </p>
+
+                </div>
+
+                <h5>Przykład 2</h5>
+                <p><kbd><span style="color:#00c4ff;font-weight:600;">&lt;p&gt;&lt;strong&gt;</span>Fałszywy nagłówek<span
+                      style="color:#00c4ff;font-weight:600;">&lt;/strong&gt;&lt;br&gt;</span> Po którym następuje jakiś tekst.&lt;/p&gt;</kbd></p>
+
+                <div class="ml-5">
+                  <p><strong>O nas</strong><br>Nie zostanie oznakowane, bo to niewielki akapit. W ślad gospodarza wszystko przepasane, jakby wstęgą, miedz zieloną, na wieś i wszerz smugów Świecą gęsto jak od dzisiaj nie chciałby do łona a przed trybunałem. </p>
+
+                  <p><strong>Pracownia Dostępności Cyfrowej</strong><br> LepszyWeb.pl<br> 44-335 Jastrzębie Zdrój<br> ul. Opolska
+                    XXX</p>
+
+                  <p><strong>To również nie zostanie oznaczone, ponieważ ten pogrubiony tekst jest długi i niekoniecznie stanowi nagłówek. Może to być po prostu duży blok pogrubionego tekstu. Ma ponad 120 znaków</strong><br>W ślad gospodarza wszystko przepasane, jakby wstęgą, miedz zieloną, na wieś i wszerz smugów Świecą gęsto jak od dzisiaj nie chciałby do łona a przed trybunałem. Jedna ręka na szańcach Pragi, na tym kończy się, by stary Rejtan, gdyby ożył? Wróciłby do lasu wracało towarzystwo liczne od starych zmienia czy cieszyć. Tymczasem na pana zwykł mawiać pan Sędzia, a Sędziego wolą była i kończąc pacierz w pomroku. Wprawdzie zdała się nie widział we śnie.</p>
+
+                  <p><strong>To zostanie oznaczone!</strong><br>Bo to dość istotny akapit. Bonaparte znowu w naukach mniej zgorszenia. Ach, ja i fijołki. Podróżny zląkł ich nie jeździł na ambonie. Nauka dawną była, szło o piękności metrykę nie zmruża jako naprzykrzona mucha. Pragnąłby u panów rozmów trwała już robił projekt, że okolica obfita we zboże i dziwi! Cóż złego, że się cukier wytapia i miłość dziecinna i gestami ją witali. Prócz Tadeusza, rzucił kilku gośćmi poszedł do afektów i zgasło. I zląkł się, wleciała przez wzgląd na dwory pańskie jachał szlachcic obyczaje wtenczas małe żarciki i opisuję, bo tak nas powrócisz cudem na łowach niż obcej mody i sam oczu nie był, opisywać długo.</p>
+                </div>
+              </div>
+
+              <hr class="pb-3">
+
+              <h2 id="list-item-1">Obrazy</h2>
+              <h3 class="pb-3 pt-3">Obrazy bez hiperłączy</h3>
+              <div class="row">
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <img src="image-examples/nambia-desert.jpg" width="100%"
+                      alt="Duże góry piasku na Pustyni Nambijskiej.">
+                    <div class="card-body">
+                      <p class="card-text">Warunek 1: Obraz ma tekst alternatywny.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <img src="image-examples/panama-beach.jpg" width="100%">
+                    <div class="card-body">
+                      <p class="card-text">Warunek 2: Obraz nie ma tekstu alternatywnego.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <img src="image-examples/birdy.jpg" width="100%" alt="Obraz ptaka.">
+                    <div class="card-body">
+                      <p class="card-text">Warunek 3: Obraz, którego tekst alternatywny zawiera zbędne słowo.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <img src="image-examples/amsterdam.jpg" width="100%" alt>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 4: Obraz oznaczony jako dekoracyjny.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <img src="image-examples/amsterdam.jpg" width="100%" alt=" ">
+                    <div class="card-body">
+                      <p class="card-text">Warunek 5: Obraz, który jest oznaczony jako dekoracyjny, ale ze spacją w atrybucie (alt=&quot;
+                        &quot;).</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <img src="image-examples/zebra.jpg" width="100%"
+                      alt="Zebry to kilka gatunków afrykańskich koniowatych (rodzina koni) połączonych charakterystycznymi czarno-białymi pasiastymi płaszczami. Ich paski występują w różnych wzorach, unikalnych dla każdego osobnika. Są to na ogół zwierzęta społeczne, które żyją w stadach od małych po duże. W przeciwieństwie do ich najbliższych krewnych, koni i osiołków, zebry nigdy nie były prawdziwie udomowione. Źródło: Wikipedia.">
+                    <div class="card-body">
+                      <p class="card-text">Warunek 6: Tekst alternatywny zbyt długi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <img src="image-examples/birdy.jpg" width="100%" alt="birdy.jpg">
+                    <div class="card-body">
+                      <p class="card-text">Warunek 7: Obraz, którego tekst alt zawiera rozszerzenie nazwy pliku.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <img src="image-examples/amsterdam.jpg" width="100%" alt="image">
+                    <div class="card-body">
+                      <p class="card-text">Warunek 8: Obraz, którego tekst alt zawiera słowo nieopisowe lub tekst zastępczy.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <h3 class="pb-3 pt-3">Obrazy z hiperłączami</h3>
+              <div class="row">
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <a href="#"><img src="image-examples/nambia-desert.jpg" width="100%"
+                        alt="Duże góry piasku na Pustyni Nambijskiej" class="w-100">
+                      <noscript><img src="https://fsc-ccf.ca/wp-content/uploads/2019/07/Ryerson-rgb-1.png"
+                          alt="Uniwersytet Ryerson"></noscript>
+                    </a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 9: Podlinkowany obraz ma tekst alternatywny.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <a href="#"><img src="image-examples/panama-beach.jpg" width="100%" class="w-100"></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 10: Podlinkowany obraz nie ma tekstu alternatywnego.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <a href="#"><img src="image-examples/birdy.jpg" width="100%" alt="Obraz ptaka."
+                        class="w-100"></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 11: Podlinkowany obraz, którego tekst alternatywny zawiera zbędne słowo.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <a href="#"><img src="image-examples/amsterdam.jpg" width="100%" alt class="w-100"></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 12: Podlinkowany obraz oznakowany jako dekoracyjny.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <a href="#"><img src="image-examples/amsterdam.jpg" width="100%" alt=" " class="w-100"></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 13: Obraz, który jest oznaczony jako dekoracyjny, ale ze spacją w atrybucie (alt=&quot; &quot;).</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <a href="#"><img src="image-examples/zebra.jpg" width="100%"
+                        alt="Zebry to kilka gatunków afrykańskich koniowatych (rodzina koni) połączonych charakterystycznymi czarno-białymi pasiastymi płaszczami. Ich paski występują w różnych wzorach, unikalnych dla każdego osobnika. Są to na ogół zwierzęta społeczne, które żyją w stadach od małych po duże. W przeciwieństwie do ich najbliższych krewnych, koni i osiołków, zebry nigdy nie były prawdziwie udomowione. Źródło: Wikipedia."
+                        class="w-100"></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 14: Podlinkowany obraz ze zbyt długim tekstem alternatywnym.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill text-center">
+                    <a href="#" style="background-color:#e2e2e2"><img src="image-examples/tiger.jpg" width="100%" alt
+                        class="w-100"><span class="text-center lead">Dowiedz się więcej o tygrysach</span></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 15: Podlinkowany obraz z pustym tekstem alternatywnym, ale ma sąsiadujące tekstowe łącze <strong>poniżej obrazu.</strong></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill text-center">
+                    <a href="#" style="background-color:#e2e2e2"><span class="text-center lead">Dowiedz się więcej o tygrysach</span><img src="image-examples/tiger.jpg" width="100%" alt class="w-100"></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 16: Podlinkowany obraz z pustym tekstem alternatywnym, ale ma sąsiadujące tekstowe łącze <strong>nad obrazem.</strong></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill text-center">
+                    <a href="#" style="background-color:#e2e2e2"><img src="image-examples/flower.jpg" width="100%"
+                        class="w-100"><span class="text-center lead">Dowiedz się więcej o dalii</span></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 17: Podlinkowany obraz z <strong>brakujacym</strong> tekstem alternatywnym i sąsiadującym tekstem łącza.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill text-center">
+                    <a href="#" style="background-color:#e2e2e2"><img src="image-examples/fiat.jpg"
+                        alt="Napraw to jeszcze raz Tomku!" width="100%" class="w-100"><span class="text-center lead">Dowiedz się więcej o fiacie.</span></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 18: Podlinkowany obraz, który ma <strong>i tekst alternatywny, i tekst łącza.</strong></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill text-center">
+                    <a href="#" style="background-color:#e2e2e2"><img src="image-examples/canary.jpg" alt width="100%"
+                        class="w-100">
+                      <h5>Dowiedz się więcej o Wyspach Kanaryjskich</h5>
+                    </a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 19: Podlinkowany obraz, który ma nieprawidłowy poziom nagłówka. Błąd jest dodawany po hiperłączu, aby zapobiec zagnieżdżeniu przycisku w hiperłączu.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill">
+                    <a href="#"><img src="image-examples/amsterdam.jpg" width="100%" alt="image"></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 20: Podlinkowany obraz, którego tekst alt zawiera słowo nieopisowe lub tekst zastępczy..</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill text-center">
+                    <a href="#" aria-hidden="true" tabindex="-1"><img src="image-examples/flower.jpg" alt width="100%"
+                        class="w-100"></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 21: Podlinkowany obraz, w którym kotwica ma aria-hidden=&quot;true&quot;
+                        oraz tabindex=&quot;-1&quot;</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                  <div class="card mb-4 shadow-sm flex-fill text-center">
+                    <a href="#" aria-hidden="true"><img src="image-examples/fiat.jpg" alt width="100%"
+                        class="w-100"></a>
+                    <div class="card-body">
+                      <p class="card-text">Warunek 22: Podlinkowany obraz, w którym kotwica ma
+                        aria-hidden=&quot;true&quot;.</p> 
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+  <footer class="text-muted sa11y-ignore">
+    <div class="container">
+      <div class="container">
+        <p>Dostosuj TAD, aby kierował tylko do określonych regionów strony. Na przykład, <a href="#">to łącze</a> będzie ignorowane. Jeśli edytor treści nie może go edytować, nie skanuj go. Celowo zastosowano bardzo niski kontrast do celów testowych.</p>
+      </div>
+  </footer>
+  <!-- Bootstrap + Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      if (window.top == window) {
+        $("#iframe-check").remove();
+      } else {
+        $("#iframe-check").css("display", "block")
+      }
+
+      if (window.top != window) {
+        $("#newtabonly").css("display", "none")
+      } else {
+        $("#newtabonly").css("display", "block")
+      }
+      $('body').scrollspy({
+        target: '#list-example'
+      })
+    });
+  </script>
+
+  <!--Jquery (Yes, loaded a second time on purpose...)-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+
+  <!-- Tippy.js CDN scripts -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <!--Sa11y-->
+    <!--TAD (Twój asysten dostępności - dołącz skrypty zamiast Sa11y)-->
+    <link rel="stylesheet" href="https://lepszyweb.pl/plik/tadek.min.css" />
+    <script src="https://lepszyweb.pl/plik/tadek-polish.min.js"></script>	
+    <script src="https://lepszyweb.pl/plik/tadek.min.js"></script>
+ 
+</body>
+
+</html>

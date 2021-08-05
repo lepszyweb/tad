@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Inne - Wszystkie zestawy reguł - Demo TAD</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <div class="sa11y-website-frame-message">
+      <p style="display:none;" id="iframe-check"><a class="sa11y-exclude" href="other.html" target="_blank">Otwórz tę stronę na nowej karcie dla lepszego doświadczenia.</a> <span class="fas fa-external-link-alt"
+          aria-hidden="true"></span></p>
+      <p style="display:none;" id="newtabonly">Przeglądaj demo na nowej karcie. <a href="../index.html#demo">Wróć do dokumentacji.</a></p>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <span class="d-flex align-items-center text-white">
+          <strong>Demo TAD</strong>
+        </span>
+        <nav class="nav nav-masthead justify-content-center sa11y-ignore">
+          <a class="nav-link" href="errors.html">Błędy</a>
+          <a class="nav-link" href="warnings.html">Ostrzeżenia</a>
+          <a class="nav-link" href="pass.html">Bez błędów</a>
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Wszystkie reguły
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="headings-images.html">Nagłówki i obrazy</a>
+              <a class="dropdown-item" href="links-tables.html">Łącza i tabele</a>
+              <a class="dropdown-item" href="contrast-labels.html">Kontrast i etykiety</a>
+              <a class="dropdown-item active" href="other.html">Inne</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Inne</h1>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div id="list-example" class="list-group sticky-top">
+              <strong class="mt-1 mb-2">Na tej stronie:</strong>
+              <a class="list-group-item list-group-item-action" href="#list-item-0">Język strony</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Treści PDF</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Tekst wielkimi literami</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Audio i wideo</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Media społecznościowe</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-5">Łącza specjalne</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-6">Fałszywe listy</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-7">Ramki wbudowane</a>
+            </div>
+          </div>
+
+          <div class="col-md-10">
+            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+
+              <h2 id="list-item-0">Język strony</h2>
+              <p>Sprawdza, czy istnieje atrybut <kbd>lang</kbd> w znaczniku <kbd>&lt;html&gt;</kbd>. Jeśli brakuje atrybutu, u góry strony zostanie dołączony baner błędu. Zobacz ten błąd w działaniu <a href="errors.html">na stronie Błędy.</a></p>  
+				  
+              <h2 id="list-item-1">Treści PDF</h2>
+			  <p>Ostrzeżenie jest dodawane do wszystkich hiperłączy, które mają <kbd>.pdf</kbd> jako rozszerzenie pliku. Ikona ostrzeżenia jest dołączana tylko do pierwszego wykrytego pliku PDF na stronie, aby uniknąć przytłaczania autora treści dużą liczbą problemów. Wszystkie inne łącza PDF są wyróżnione wizualnie. Na przykład:</p>
+              <div class="ml-5">
+                <ul>
+                  <li class="pb-2">Pobierz <a href="#.pdf">Podręcznik rekrutacji <span class="sr-only">(PDF)</span><i
+                        aria-hidden="true" class="far fa-file-pdf"></i></a></li>
+                  <li class="pb-2"><a href="#.pdf">Program kursu <span class="sr-only">(PDF)</span><i
+                        aria-hidden="true" class="far fa-file-pdf"></i></a></li>
+                  <li class="pb-2"><a href="#.pdf">Ściągawka <span class="sr-only">(PDF)</span><i aria-hidden="true"
+                        class="far fa-file-pdf"></i></a></li>
+                </ul>
+              </div>
+
+
+              <h2 id="list-item-2" class="pt-3">Tekst wielkimi literami</h2>
+              <p>To ostrzeżenie ma zniechęcać do pisania fragmentów tekstów wielkimi literami. <strong>Nie jest</strong> to wymóg WCAG 2.1, jednak w oparciu o badania jest to zdecydowanie odradzana praktyka w zakresie czytelności. Ponadto, niektóre wyrazy pisane wielką literą mogą być mylone ze skrótami i prezentowane przez czytniki ekranu znak po znaku.</p>
+              <p>Ten warunek używa wyrażenia regularnego do znalezienia słów składających się z wielkich liter, które mają co najmniej 3 znaki, jednak zostanie to wskazane jako ostrzeżenie tylko wtedy, gdy zostanie znalezione co najmniej 5 słów w elemencie napisanych wielkimi literami. Sprawdza tylko wielkie litery w następujących elementach: h1, h2, h3, h4, h5, h6, p, li, span, blockquote.</p>	
+				
+			
+
+              <div class="row pt-3 ml-5">
+                <div class="col-md-6">
+                  <h3>Przykład #1</h3>
+                  <p>NA PRZYKŁAD, TEN TEKST ZOSTANIE OZNACZONY.</p>
+                </div>
+                <div class="col-md-6">
+                  <h3>Przykład #2</h3>
+                  <p>NA PRZYKŁAD, TEN TEKST nie będzie oznaczony.</p>
+                </div>
+                <div class="col-md-12">
+                  <h3>Przykład #3</h3>
+                  <ul>
+                    <li>TEKST WIELKIMI LITERAMI W WYLICZENIACH również zostanie oznaczony.</li>
+					<li>TEKST WIELKIMI literami W WYLICZENIACH również ZOSTANIE oznaczony.</li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <h2 id="list-item-3" class="pt-3">Audio i Wideo</h2>
+              <p>Ten warunek ma służyć jako przyjazne przypomnienie. Filmy otrzymają ostrzeżenie, aby zapewnić napisy rozszerzone. Audio otrzyma ostrzeżenie, aby upewnić się, że nagranie dźwiękowe/podcast audio ma transkrypcję. Ten warunek <strong>nie sprawdza</strong>, czy napisy lub transkrypcje istnieją. Dostosuj ten warunek, dodając własne źródła strumieniowego przesyłania multimediów.</p>
+				
+				
+              <div class="row pt-1 ml-5">
+                <div class="col-md-6">
+                  <h3 class="h4">Przykład #1 - Video</h3>
+                  <p>Ten warunek sprawdza istnienie znacznika HTML <kbd>&lt;video&gt;</kbd> oraz odwołań do Vimeo i YouTube.</p>
+                  <iframe class="embed-responsive" width="560" height="315"
+                    src="https://www.youtube.com/embed/HgzGwKwLmgM" title="Queen - Don't stop me now." frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="h4">Przykład #2 - Audio</h3>
+                  <p>Ten warunek sprawdza istnienie znacznika HTML <kbd>&lt;audio&gt;</kbd> oraz odwołań do <a href="https://soundcloud.com/">SoundCloud.</a></p>
+                  <iframe class="embed-responsive-item" title="Widżet SoundCloud" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/158888399&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+              </div>
+
+              <div class="row pt-3 ml-5">
+                <div class="col-md-6">
+                  <h3 class="h4">Przykład #3 - HTML Video</h3>
+                  <video class="embed-responsive" width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+                    Twoja przeglądarka nie obsługuje znacznika wideo.
+                  </video>
+                  <p><small>Źródło wideo: W3Schools</small></p>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="h4">Przykład #4 - Wideo HTML z Track/CC</h3>
+                  <p>Dobrze: Ma element <kbd>&lt;track&gt;</kbd>.</p>
+                    <video class="embed-responsive" width="300" controls
+                      src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4">
+                    <track default kind="captions"
+                          srclang="en"
+                          src="friday.vtt" />
+                    Twoja przeglądarka nie obsługuje osadzonych filmów.
+                  </video>
+                  <p><small>Źródło wideo: <span lang="en">MDN WebDocs</span></small></p>
+                </div>
+              </div>
+
+              <div class="row pt-3 ml-5">
+                <div class="col-md-6">
+                  <h3 class="h4">Przykład #5 - HTML Audio</h3>
+                  <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                  Twoja przeglądarka nie obsługuje znacznika audio.
+                  </audio>
+                  <p><small>Źródło audio: <span lang="en">W3Schools</span></small></p>
+                </div>
+                <div class="col-md-6"></div>
+              </div>
+
+              <h2 id="list-item-4" class="pt-3">Widżety mediów społecznościowych</h2>
+              <p>Ten warunek ma na celu zachęcenie użytkowników do optymalizacji domyślnego widżetu Twittera pod kątem dostępności i użyteczności. Ten warunek może być przydatny w dużych organizacjach (takich jak uniwersytety lub urzędy), w których uruchamia się wiele kanałów mediów społecznościowych. Ten warunek nie jest oparty na WCAG 2, ale jest zdecydowanie zalecany.</p>
+              <p>Ładowanie wielu widżetów trwa długo. Przed włączeniem TAD-a poczekaj, aż strona załaduje się całkowicie.</p>
+			  
+              <div class="row pt-3 ml-5">
+                <div class="col-md-6">
+                  <h3>Przykład #1</h3>
+                  <p>Domyślny kod widżetu Twittera.</p><a class="twitter-timeline" title="Tweety autorstwa TwitterDev" data-height="300"
+                    data-width="330" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw"><span
+                      class="sr-only" lang="en">Tweety autorstwa TwitterDev</span></a>
+                </div>
+                <div class="col-md-6">
+                  <h3>Przykład #2</h3>
+                  <p>Zoptymalizowany widżet Twittera.</p><a data-tweet-limit="1" title="Tweety autorstwa TwitterDev" class="twitter-timeline"
+                    data-chrome="nofooter noheader" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw"><span
+                      class="sr-only"lang="en">Tweety autorstwa TwitterDev</span></a>
+                </div>
+              </div>
+
+              <h2 id="list-item-5" class="pt-3">Wykrycie łączy specjalnych</h2>
+              <p>Dostosuj ten warunek, aby wykrywać błęd dla wszystkich łączy wskazujących na środowisko programistyczne. Ten test <strong>nie wykrywa</strong> zerwanych łączy (404). Korzystając z referencji <a href="https://www.w3schools.com/cssref/css_selectors.asp">selektora CSS W3Schools</a>, dostosuj ten warunek, aby dodać własne przypadki.</p>
+              <p class="ml-5">Na przykład poniższe hiperłącze nieprawidłowo wskazuje na wp-admin: <a href="https://www.ryerson.ca/wp-admin/">O Ryerson</a>.</p>	
+				  
+
+              <h2 id="list-item-6" class="pt-3">Fałszywe listy</h2>
+              <p>a) Czasami ludzie ręcznie tworzą listę<br>
+                b) stosując przedrostki fałszywych list<br>
+                c) zamiast stosować listy semantyczne.</p>
+
+              <h3>Inna fałszywa lista</h3>
+              <p>a. Jabłka</p>
+              <p>b. Banany</p>
+              <p>c. Gruszki</p>
+
+              <h2 id="list-item-7" class="pt-3">Ramki wbudowane</h2>
+              <p>iFrame, które są wyraźnie ukryte (np. za pomocą <kbd>display:none</kbd>) są ignorowane.</p>
+              <div class="row pt-3">
+                <div class="col-md-6">
+                  <h3 class="h4">Brakuje tytułu iFrame</h3>
+                  <iframe loading="lazy" width="100%" height="315"
+                  src="https://www.youtube.com/embed/yMDOin3yWhU" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="h4">Ogólne ostrzeżenie o iFrame</h3>
+                  <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+  <footer class="text-muted sa11y-ignore">
+      <div class="container">
+        <p>Dostosuj TAD, aby kierował tylko do określonych regionów strony. Na przykład, <a href="#">to łącze</a> będzie ignorowane. Jeśli edytor treści nie może go edytować, nie skanuj go. Celowo zastosowano bardzo niski kontrast do celów testowych.</p>
+      </div>
+  </footer>
+
+  <!-- Bootstrap + Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      if (window.top == window) {
+        $("#iframe-check").remove();
+      } else {
+        $("#iframe-check").css("display", "block")
+      }
+
+      if (window.top != window) {
+        $("#newtabonly").css("display", "none")
+      } else {
+        $("#newtabonly").css("display", "block")
+      }
+      $('body').scrollspy({
+        target: '#list-example'
+      })
+    });
+    anchors.add();
+  </script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="erE7GmIs"></script>
+  <!--Jquery (Yes, loaded a second time on purpose...)-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+
+  <!-- Tippy.js CDN scripts -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+<!--Sa11y-->
+    <!--TAD (Twój asysten dostępności - dołącz skrypty zamiast Sa11y)-->
+    <link rel="stylesheet" href="https://lepszyweb.pl/plik/tadek.min.css" />
+    <script src="https://lepszyweb.pl/plik/tadek-polish.min.js"></script>	
+    <script src="https://lepszyweb.pl/plik/tadek.min.js"></script>
+</body>
+
+</html>
