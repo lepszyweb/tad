@@ -247,13 +247,13 @@ const sa11yIM = {
             `Rozważ zastąpienie tekstu łącza: <span class='sa11y-red-text sa11y-bold'>${error}</span>
             ${sa11yHr}
             <ul>
-                <li>&bdquo;Kliknj tutaj&rdquo; skupia się na mechanice myszy, podczas gdy wiele osób nie używa myszy lub może przeglądać tę stronę na urządzeniu mobilnym. Rozważ użycie innego czasownika, który odnosi się do zadania.</li>
+                <li>&bdquo;Kliknij tutaj&rdquo; skupia się na mechanice myszy, podczas gdy wiele osób nie używa myszy lub może przeglądać tę stronę na urządzeniu mobilnym. Rozważ użycie innego czasownika, który odnosi się do zadania.</li>
                 <li>Unikaj używania symboli HTML jako wezwań do działania, chyba że są one ukryte dla technologii wspomagających.</li>
             </ul>
             `,
 
         linkURL: () =>
-            `Dłuższe, mniej zrozumiałe adresy URL używane jako tekst odnośnika mogą być trudne do odsłuchania za pomocą technologii wspomagającej. W&nbsp;większości przypadków zamiast adresu URL lepiej jest używać tekstu czytelnego dla człowieka. Krótkie adresy URL (takie jak strona główna witryny) są w porządku.
+            `Dłuższe, mniej zrozumiałe adresy URL używane jako tekst odnośnika mogą być trudne do odsłuchania za pomocą technologii wspomagającej. W&nbsp;większości przypadków zamiast adresu URL lepiej jest używać tekstu czytelnego dla człowieka. Krótkie adresy URL (takie jak głównej strony witryny) są w porządku.
             ${sa11yHr}
             <span class='sa11y-bold'>Porada!</span> Tekst łącza powinien być zawsze jasny, unikalny i znaczący, aby mógł być zrozumiany bez kontekstu.`,
     },
@@ -318,7 +318,7 @@ const sa11yIM = {
             `Obraz w łączu jest oznaczony jako dekoracyjny i nie ma tekstu łącza. Dodaj do obrazu tekst alt, który opisze miejsce docelowe łącza.`,
 
         linkHasAltMessage: 
-            `Obraz jest oznaczony jako dekoracyjny, chociaż łącze używa otaczającego go tekstu jako etykiety opisowej.`,
+            `Obraz jest oznaczony jako dekoracyjny, ale łącze używa otaczającego go tekstu jako etykiety opisowej.`,
 
         decorativeMessage: 
             `Obraz jest oznaczony <span class='sa11y-bold'>dekoracyjny</span> i zostanie zignorowany przez technologię wspomagającą. Jeśli obraz przekazuje jakąś historię, nastrój lub ważną informację - dodaj tekst alt.`,
@@ -328,7 +328,7 @@ const sa11yIM = {
 
         hyperlinkAltLengthMessage: (altText, altLength) =>
             `Tekst alternatywny opisujący obraz będący łączem jest <span class='sa11y-bold'>zbyt długi</span>. 
-            Tekst alternatywny na obrazach bedących łączami powinien przedstawiać, dokąd prowadzi łącze, a nie dosłowne opisywać obraz. 
+            Tekst alternatywny na obrazach bedących łączami powinien przedstawiać, dokąd prowadzi łącze, a nie dosłownie opisywać obraz. 
             <span class='sa11y-bold'>Rozważ użycie jako tekstu alternatywnego tytułu strony, do którego łączy obraz.</span> 
             ${sa11yHr} 
             Aktualnie tekst alternatywny ma <span class='sa11y-red-text sa11y-bold'>${altLength}</span> znaków: 
@@ -426,7 +426,7 @@ const sa11yIM = {
             `,
 
         pdf: (pdfCount) =>
-            `Pliki PDF są uważane za treści internetowe i muszą być również dostępne. Pliki PDF często powodują problemy dla osób korzystających z czytników ekranu (brakujące znaczniki strukturalne lub etykiety pól formularzy) oraz dla osób słabowidzących (tekst nie jest ponownie wyświetlany po powiększeniu).
+            `Pliki PDF są uważane za treści internetowe i muszą być również dostępne. Pliki PDF często powodują problemy dla osób korzystających z&nbsp;czytników ekranu (brakujące znaczniki strukturalne lub etykiety pól formularzy) oraz dla osób słabowidzących (tekst nie jest ponownie wyświetlany po powiększeniu).
             <ul>
                 <li>Jeśli jest to formularz, rozważ użycie dostępnego formularza HTML jako alternatywy</li>
                 <li>Jeśli jest to dokument, rozważ przekonwertowanie go na stronę internetową.</li>
@@ -468,10 +468,10 @@ const sa11yIM = {
         shouldBeList: (firstPrefix) =>
             `Czy próbujesz utworzyć listę? Wykryto możliwe elementy listy: <span class='sa11y-bold sa11y-red-text'>${firstPrefix}</span>
             ${sa11yHr} 
-            Upewnij się, że używasz list semantycznych, zamiast stosowania znaków punktowania (np. myślników) lub liczb. Podczas korzystania z list semantycznych technologie asystujące są w stanie przekazać takie informacje, jak ogólna liczba elementów i względna pozycja każdego elementu na liście. Dowiedz się więcej o <a href='https://www.w3.org/WAI/tutorials/page-structure/content/#lists' target='_blank'>semantycznych listach. ${sa11yNewTab}</a>`,
+            Upewnij się, że używasz list semantycznych, zamiast stosowania znaków punktowania (np. myślników) lub liczb. Podczas korzystania z list semantycznych technologie wspomagające są w stanie przekazać takie informacje, jak ogólna liczba elementów i względna pozycja każdego elementu na liście. Dowiedz się więcej o <a href='https://www.w3.org/WAI/tutorials/page-structure/content/#lists' target='_blank'>semantycznych listach. ${sa11yNewTab}</a>`,
 
         announcementWarningMessage: 
-            `Więcej niż jeden komponent <strong>komponent Powiadomienia</strong>! Komponent Powiadomienia powinien być używany strategicznie i oszczędnie. Powinien być używany, aby zwrócić uwagę lub ostrzec użytkowników o czymś ważnym. Niewłaściwe użycie tego komponentu sprawia, że jest mniej wydajny i skuteczny. Ten komponent jest semantycznie oznaczony jako Powiadomienia dla osób korzystających z czytników ekranu.`,
+            `Więcej niż jeden komponent <strong>komponent Powiadomienia</strong>! Komponent Powiadomienia powinien być używany strategicznie i&nbsp;oszczędnie. Powinien być używany, aby zwrócić uwagę lub ostrzec użytkowników o czymś ważnym. Niewłaściwe użycie tego komponentu sprawia, że jest mniej wydajny i skuteczny. Ten komponent jest semantycznie oznaczony jako Powiadomienia dla osób korzystających z&nbsp;czytników ekranu.`,
     },
 
     contrast: {
