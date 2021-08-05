@@ -1,4 +1,4 @@
-![TAD, Twój Asystent Dostępności.](./docs/assets/tad-logo.svg)
+![TAD, Twój Asystent Dostępności.](./docs/assets/images/tad-logo.svg)
 
 # TAD 
 TAD to narzędzie wspomagajace zapewnianie dostępność, które wizualnie wyróżnia typowe problemy z&nbsp;dostępnością i&nbsp;użytecznością. Przeznaczony dla autorów treści, TAD wskazuje błędy lub ostrzeżenia z&nbsp;prostą wskazówką, jak je naprawić.</p>
