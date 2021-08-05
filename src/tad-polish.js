@@ -7,7 +7,7 @@ let sa11yCheckRoot = "main"; //Default: body. Use "main" for main content.
 
 //Readability configuration.
 let sa11yReadabilityRoot = "main"; //Default: main, [role='main'].
-const sa11yReadabilityLang = "en"; //Supported: en = English, fr = French, es = Spanish
+const sa11yReadabilityLang = "es"; //Supported: en = English, fr = French, es = Spanish
 
 //Inclusions and exclusions. Use commas to seperate classes or elements.
 let sa11yContainerIgnore = ".sa11y-ignore", //Ignore specific regions.
