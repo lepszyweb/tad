@@ -60,10 +60,10 @@ const sa11yReadability = "Czytelność",
 
 //Panel status
 const sa11yPanelStatus = {
-    status1: `Wykryto błąd dostępności: 1 i ostrzeżenia: 1.`,
-    status2: (warningCount) => `Wykryto błąd dostępności: 1 i ostrzeżenia: ${warningCount}.`,
-    status3: (errorCount) => `Wykryto błędy dostępności: ${errorCount} i ostrzeżenie: 1.`,
-    status4: (errorCount, warningCount) => `Wykryto błędy dostępności: ${errorCount} i ostrzeżenia: ${warningCount}.`,
+    status1: `Wykryto błąd dostępności: 1 i&nbsp;ostrzeżenie: 1.`,
+    status2: (warningCount) => `Wykryto błąd dostępności: 1 i&nbsp;ostrzeżenia: ${warningCount}.`,
+    status3: (errorCount) => `Wykryto błędy dostępności: ${errorCount} i&nbsp;ostrzeżenie: 1.`,
+    status4: (errorCount, warningCount) => `Wykryto błędy dostępności: ${errorCount} i&nbsp;ostrzeżenia: ${warningCount}.`,
     status5: `Wykryto błąd dostępności: 1.`,
     status6: (errorCount) => `Wykryto błędy dostępności: ${errorCount}.`,
     status7: `Przejrzyj ostrzeżenie.`,
