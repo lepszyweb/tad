@@ -106,7 +106,7 @@ src="https://www.facebook.com/tr?id=487063571839875&ev=PageView&noscript=1"
               <div class="res-local-header">
                 <div class="row template-local-header">
                   <div class="local-header-section col-xs-12 text-center">
-				  <h1><img class="logotad" src="./assets/images/tad-logo.svg" alt="Twój asystent dostępności"></h1>
+				  <h1><img class="logotad" src="./assets/images/tad-logo.svg" alt="Twój asystent dostępności"><span class="sr-only">Twój Asystent Dostępności</span></h1>
                   </div>
                 </div>
               </div>
@@ -167,11 +167,11 @@ src="https://www.facebook.com/tr?id=487063571839875&ev=PageView&noscript=1"
               <p>TAD działa jako prosty program testujący pojedyncze strony. Został&nbsp;zaprojektowany tak, aby można go było łatwo zintegrować z&nbsp;dowolnym systemem zarządzania treścią (<abbr title="Content Management System">CMS</abbr>), ale może również działać jako skryptozakładka. TAD&nbsp;<em>nie</em>&nbsp;jest narzędziem do wszechstronnej analizy kodu. TAD zwraca uwagę wyłącznie na kwestie związane z treścią</p>
               <ul>
                 <li>Ponad 50 warunków testowych.</li>
-                <li>Darmowe i otwarte źródło.</li>
+                <li>Darmowe i otwarte oprogramowanie.</li>
                 <li>Zwięzłe intuicyjne podpowiedzi wyjaśniające problemy.</li>
                 <li>Bez skomplikowanego API lub integracji.</li>
                 <li>Łatwy do dostosowania: dodaj własne zestawy reguł.</li>
-                <li>Automatyczne: sprawdza treść podczas łądowania strony.</li>
+                <li>Automatyczne: sprawdza treść podczas ładowania strony.</li>
                 <li>Dodatkowe (przełączane) kontrole: Kontrast, etykiety formularzy, czytelność, łącza (zaawansowane).</li>
                 <li>Tryb  ciemny.</li>
               </ul>
@@ -716,6 +716,10 @@ src="https://www.facebook.com/tr?id=487063571839875&ev=PageView&noscript=1"
       'settings': {
         'skipTo': {
           landmarks: 'main, [role="main"], nav[aria-label="glowna"]',
+		  buttonDivTitle: 'Nawiguj klawiaturą',
+		  landmarksLabel: 'Przejdź do',
+		  headingsLabel:  'Struktura strony',		  
+		  contentLabel: ' Treść główna',
           headings: 'main h1, main h2, main h3',
           accesskey: 'S',
           colorTheme: 'default',
