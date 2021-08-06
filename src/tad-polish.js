@@ -51,7 +51,7 @@ const sa11yLangCode = "pl", //Language code, e.g. "fr"
 //Readability panel translations.
 const sa11yReadability = "Czytelność",
     sa11yAvgWordPerSentence = "Średnio słów w zdaniu:",
-    sa11yComplexWords = "Złożone słowa:",
+    sa11yComplexWords = "Trudne słowa:",
     sa11yTotalWords = "Słowa:",
     sa11yVeryDifficultReadability = "Bardzo trudne",
     sa11yDifficultReadability = "Trudne",
@@ -60,18 +60,18 @@ const sa11yReadability = "Czytelność",
 
 //Panel status
 const sa11yPanelStatus = {
-    status1: `Wykryto 1 błąd dostępności i 1 ostrzeżenie.`,
-    status2: (warningCount) => `Wykryto 1 błąd dostępności i ${warningCount} ostrzeżenia.`,
-    status3: (errorCount) => `Wykryte błędy dostępności: ${errorCount} i 1 ostrzeżenie.`,
-    status4: (errorCount, warningCount) => `Wykryte błędy dostępności: ${errorCount} i ostrzeżenia: ${warningCount}.`,
-    status5: `Wykryty 1 błąd dostępności.`,
-    status6: (errorCount) => `Wykryte błędy dostępności: ${errorCount}.`,
+    status1: `Wykryto błąd dostępności: 1 i ostrzeżenia: 1.`,
+    status2: (warningCount) => `Wykryto błąd dostępności: 1 i ostrzeżenia: ${warningCount}.`,
+    status3: (errorCount) => `Wykryto błędy dostępności: ${errorCount} i ostrzeżenie: 1.`,
+    status4: (errorCount, warningCount) => `Wykryto błędy dostępności: ${errorCount} i ostrzeżenia: ${warningCount}.`,
+    status5: `Wykryto błąd dostępności: 1.`,
+    status6: (errorCount) => `Wykryto błędy dostępności: ${errorCount}.`,
     status7: `Przejrzyj ostrzeżenie.`,
     status8: (warningCount) => `Ostrzeżenia do przegladu: ${warningCount}.`,
     status9: `Nie wykryto błędów dostępności.`,
     status10: (warningCount) => `${warningCount} <span class="sa11y-visually-hidden">ostrzeżeń do przeglądu.</span>`,	
     status11: (totalCount) => `${totalCount} <span class="sa11y-visually-hidden">ogółem wykrytych problemów.</span>`,	
-    notVisibleAlert: `Element, który próbujesz wyświetlić nie jest widoczny; może być ukryty lub znajdować się wewnątrz akordeonu lub karty. Tutaj jest podgląd:`
+    notVisibleAlert: `Element, który próbujesz wyświetlić, nie jest widoczny; może być ukryty lub znajdować się wewnątrz akordeonu lub karty. Tutaj jest podgląd:`
 }
 
 //Embedded content.
